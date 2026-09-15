@@ -96,13 +96,14 @@ const state = {
   senadoresTodos: [],
 
   diputados2027ByProv: new Map(),   // provincia -> filas que renuevan en 2027
-  diputadosVigentesPorProv: new Map(), // provincia -> cantidad que NO renueva (mandato hasta 2029)
+  diputadosVigentesByProv: new Map(), // provincia -> filas con mandato vigente hasta 2029
   senadores2027ByProv: new Map(),   // provincia -> filas que renuevan en 2027
   senadoresCeseAnioPorProv: new Map(), // provincia (no renueva en 2027) -> año de cese
 
   bloquesDiputados: [],
   bloquesSenado: [],
 
+  desdoblamientoFiltro: null, // null | 'all' | 'desdobla' | 'no_desdobla' | 'en_definicion' | 'sin_dato'
   desdoblamientoByProv: new Map(),
   displayNameByProv: new Map(), // clave canónica -> nombre bonito (del geojson)
   geoLayer: null,
@@ -115,6 +116,13 @@ const DESDOBLAMIENTO_LABEL = {
   no_desdobla: "No desdobla",
   en_definicion: "En definición",
   sin_dato: "Sin dato",
+};
+
+const DESDOBLAMIENTO_COLOR = {
+  desdobla: "#2f7d4f",
+  no_desdobla: "#a83f2a",
+  en_definicion: "#b98a24",
+  sin_dato: "#9aa1a6",
 };
 
 function getDesdoblamiento(provKey) {
@@ -166,7 +174,7 @@ async function loadData() {
   const diputados2027 = diputados.filter((d) => d.finalizaAnio === 2027);
   const diputadosVigentes = diputados.filter((d) => d.finalizaAnio !== 2027);
   state.diputados2027ByProv = groupByProvincia(diputados2027);
-  state.diputadosVigentesPorProv = countByProvincia(diputadosVigentes);
+  state.diputadosVigentesByProv = groupByProvincia(diputadosVigentes);
   state.provinciasConDiputados = new Set(state.diputados2027ByProv.keys());
   state.bloquesDiputados = uniqueBloques(diputados2027);
 
@@ -226,6 +234,15 @@ function styleForProvince(provKey) {
     color: "#ffffff",
     fillOpacity: 0.92,
   };
+
+  if (state.desdoblamientoFiltro) {
+    const estado = getDesdoblamiento(provKey).estado;
+    const color = DESDOBLAMIENTO_COLOR[estado] || DESDOBLAMIENTO_COLOR.sin_dato;
+    if (state.desdoblamientoFiltro === "all" || state.desdoblamientoFiltro === estado) {
+      return Object.assign(base, { fillColor: color, fillOpacity: 0.88 });
+    }
+    return Object.assign(base, { fillColor: "#e7edf3", fillOpacity: 0.3, color: "#c7c7c9" });
+  }
 
   if (!state.bloqueFiltro) {
     if (state.chamber === "senado") {
@@ -330,7 +347,7 @@ function tooltipHTML(provKey) {
     }
   } else {
     const renuevan = (state.diputados2027ByProv.get(provKey) || []).length;
-    const vigentes = state.diputadosVigentesPorProv.get(provKey) || 0;
+    const vigentes = (state.diputadosVigentesByProv.get(provKey) || []).length;
     const partes = [];
     partes.push(`${renuevan} ${renuevan === 1 ? "diputado renueva" : "diputados renuevan"} en 2027`);
     partes.push(`${vigentes} ${vigentes === 1 ? "continúa" : "continúan"} con mandato vigente`);
@@ -364,43 +381,82 @@ const panelBadgeEl = document.getElementById("panelBadge");
 const panelCountEl = document.getElementById("panelCount");
 const panelListEl = document.getElementById("panelList");
 
-function openPanel(provKey) {
-  const name = state.displayNameByProv.get(provKey) || provKey;
-  const rows =
-    state.chamber === "senado"
-      ? state.senadores2027ByProv.get(provKey) || []
-      : state.diputados2027ByProv.get(provKey) || [];
+function legislatorLi(row, extraClass) {
+  const li = document.createElement("li");
+  if (extraClass) li.className = extraClass;
+  const dot = document.createElement("span");
+  dot.className = "pl-dot";
+  dot.style.background = colorForBloque(row.bloque);
+  const text = document.createElement("span");
+  text.innerHTML = `<span class="pl-name">${row.apellido}, ${row.nombre}</span><span class="pl-bloque">${row.bloque}</span>`;
+  li.appendChild(dot);
+  li.appendChild(text);
+  return li;
+}
 
-  panelTitleEl.textContent = name;
-  panelBadgeEl.innerHTML = badgeHTML(provKey);
-
-  const camaraLabel = state.chamber === "senado" ? "Senado" : "Diputados";
-  panelCountEl.textContent =
-    rows.length === 0
-      ? `Sin bancas de ${camaraLabel} venciendo en 2027`
-      : `${rows.length} banca${rows.length === 1 ? "" : "s"} de ${camaraLabel} vencen el 9/12/2027`;
-
-  panelListEl.innerHTML = "";
+function appendLegislatorRows(rows, emptyText) {
   if (rows.length === 0) {
     const li = document.createElement("li");
     li.className = "panel-empty";
-    li.textContent = "No hay legisladores de esta cámara renovando en esta provincia en 2027.";
+    li.textContent = emptyText;
     panelListEl.appendChild(li);
+    return;
+  }
+  rows
+    .slice()
+    .sort((a, b) => a.apellido.localeCompare(b.apellido, "es"))
+    .forEach((row) => panelListEl.appendChild(legislatorLi(row)));
+}
+
+function openPanel(provKey) {
+  const name = state.displayNameByProv.get(provKey) || provKey;
+
+  panelTitleEl.textContent = name;
+  panelBadgeEl.innerHTML = badgeHTML(provKey);
+  panelListEl.innerHTML = "";
+
+  if (state.chamber === "senado") {
+    const rows = state.senadores2027ByProv.get(provKey) || [];
+    panelCountEl.textContent =
+      rows.length === 0
+        ? "Sin bancas de Senado venciendo en 2027"
+        : `${rows.length} banca${rows.length === 1 ? "" : "s"} de Senado vencen el 9/12/2027`;
+    appendLegislatorRows(rows, "No hay senadores renovando en esta provincia en 2027.");
   } else {
-    rows
+    const rows2027 = state.diputados2027ByProv.get(provKey) || [];
+    const rowsVigentes = state.diputadosVigentesByProv.get(provKey) || [];
+    panelCountEl.textContent = `${rows2027.length} banca${rows2027.length === 1 ? "" : "s"} vence${rows2027.length === 1 ? "" : "n"} el 9/12/2027 · ${rowsVigentes.length} con mandato vigente hasta 2029`;
+
+    const heading2027 = document.createElement("li");
+    heading2027.className = "panel-section-title";
+    heading2027.textContent = `Vencen el 9/12/2027 (${rows2027.length})`;
+    panelListEl.appendChild(heading2027);
+    rows2027
       .slice()
       .sort((a, b) => a.apellido.localeCompare(b.apellido, "es"))
-      .forEach((row) => {
-        const li = document.createElement("li");
-        const dot = document.createElement("span");
-        dot.className = "pl-dot";
-        dot.style.background = colorForBloque(row.bloque);
-        const text = document.createElement("span");
-        text.innerHTML = `<span class="pl-name">${row.apellido}, ${row.nombre}</span><span class="pl-bloque">${row.bloque}</span>`;
-        li.appendChild(dot);
-        li.appendChild(text);
-        panelListEl.appendChild(li);
-      });
+      .forEach((row) => panelListEl.appendChild(legislatorLi(row)));
+    if (rows2027.length === 0) {
+      const li = document.createElement("li");
+      li.className = "panel-empty";
+      li.textContent = "Ningún diputado de esta provincia renueva en 2027.";
+      panelListEl.appendChild(li);
+    }
+
+    const heading2029 = document.createElement("li");
+    heading2029.className = "panel-section-title panel-section-title-2029";
+    heading2029.textContent = `Mandato vigente hasta 2029 (${rowsVigentes.length})`;
+    panelListEl.appendChild(heading2029);
+    if (rowsVigentes.length === 0) {
+      const li = document.createElement("li");
+      li.className = "panel-empty";
+      li.textContent = "Ningún diputado de esta provincia tiene mandato hasta 2029.";
+      panelListEl.appendChild(li);
+    } else {
+      rowsVigentes
+        .slice()
+        .sort((a, b) => a.apellido.localeCompare(b.apellido, "es"))
+        .forEach((row) => panelListEl.appendChild(legislatorLi(row, "panel-row-2029")));
+    }
   }
 
   panelEl.classList.add("open");
@@ -423,6 +479,21 @@ panelOverlayEl.addEventListener("click", closePanel);
 const legendEl = document.getElementById("legend");
 
 function renderLegend() {
+  if (state.desdoblamientoFiltro) {
+    const rows = Object.keys(DESDOBLAMIENTO_LABEL)
+      .map(
+        (estado) =>
+          `<div class="legend-row"><span class="legend-swatch" style="background:${DESDOBLAMIENTO_COLOR[estado]}"></span>${DESDOBLAMIENTO_LABEL[estado]}</div>`
+      )
+      .join("");
+    legendEl.innerHTML = `
+      <h3>Desdoblamiento electoral 2027</h3>
+      ${rows}
+      <p style="margin:6px 0 0;color:var(--ink-faint)">Clic de nuevo en la categoría o en el título para volver al mapa por cámara.</p>
+    `;
+    return;
+  }
+
   if (!state.bloqueFiltro) {
     if (state.chamber === "senado") {
       legendEl.innerHTML = `
@@ -564,6 +635,43 @@ bloqueSelect.addEventListener("change", () => {
   refreshMapStyles();
   renderLegend();
   renderBloqueSummary();
+});
+
+// ---------------------------------------------------------------------
+// Leyenda de desdoblamiento clickeable (filtra/colorea el mapa)
+// ---------------------------------------------------------------------
+const badgeLegendLabelEl = document.getElementById("badgeLegendLabel");
+
+function updateBadgeLegendActiveStates() {
+  badgeLegendLabelEl.classList.toggle("active", state.desdoblamientoFiltro === "all");
+  document.querySelectorAll("#badgeLegend [data-estado]").forEach((el) => {
+    el.classList.toggle("active", state.desdoblamientoFiltro === el.dataset.estado);
+  });
+}
+
+function setDesdoblamientoFiltro(value) {
+  state.desdoblamientoFiltro = state.desdoblamientoFiltro === value ? null : value;
+  refreshMapStyles();
+  renderLegend();
+  updateBadgeLegendActiveStates();
+}
+
+badgeLegendLabelEl.addEventListener("click", () => setDesdoblamientoFiltro("all"));
+badgeLegendLabelEl.addEventListener("keydown", (e) => {
+  if (e.key === "Enter" || e.key === " ") {
+    e.preventDefault();
+    setDesdoblamientoFiltro("all");
+  }
+});
+
+document.querySelectorAll("#badgeLegend [data-estado]").forEach((el) => {
+  el.addEventListener("click", () => setDesdoblamientoFiltro(el.dataset.estado));
+  el.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      setDesdoblamientoFiltro(el.dataset.estado);
+    }
+  });
 });
 
 // ---------------------------------------------------------------------
