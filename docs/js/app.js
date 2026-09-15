@@ -381,14 +381,15 @@ const panelBadgeEl = document.getElementById("panelBadge");
 const panelCountEl = document.getElementById("panelCount");
 const panelListEl = document.getElementById("panelList");
 
-function legislatorLi(row, extraClass) {
+function legislatorLi(row, vigente) {
   const li = document.createElement("li");
-  if (extraClass) li.className = extraClass;
+  if (vigente) li.className = "panel-row-2029";
   const dot = document.createElement("span");
   dot.className = "pl-dot";
   dot.style.background = colorForBloque(row.bloque);
   const text = document.createElement("span");
-  text.innerHTML = `<span class="pl-name">${row.apellido}, ${row.nombre}</span><span class="pl-bloque">${row.bloque}</span>`;
+  const tag = vigente ? ' <span class="pl-tag">Vigente hasta 2029</span>' : "";
+  text.innerHTML = `<span class="pl-name">${row.apellido}, ${row.nombre}</span><span class="pl-bloque">${row.bloque}${tag}</span>`;
   li.appendChild(dot);
   li.appendChild(text);
   return li;
@@ -425,37 +426,30 @@ function openPanel(provKey) {
   } else {
     const rows2027 = state.diputados2027ByProv.get(provKey) || [];
     const rowsVigentes = state.diputadosVigentesByProv.get(provKey) || [];
-    panelCountEl.textContent = `${rows2027.length} banca${rows2027.length === 1 ? "" : "s"} vence${rows2027.length === 1 ? "" : "n"} el 9/12/2027 · ${rowsVigentes.length} con mandato vigente hasta 2029`;
-
-    const heading2027 = document.createElement("li");
-    heading2027.className = "panel-section-title";
-    heading2027.textContent = `Vencen el 9/12/2027 (${rows2027.length})`;
-    panelListEl.appendChild(heading2027);
-    rows2027
-      .slice()
-      .sort((a, b) => a.apellido.localeCompare(b.apellido, "es"))
-      .forEach((row) => panelListEl.appendChild(legislatorLi(row)));
-    if (rows2027.length === 0) {
-      const li = document.createElement("li");
-      li.className = "panel-empty";
-      li.textContent = "Ningún diputado de esta provincia renueva en 2027.";
-      panelListEl.appendChild(li);
+    let combined = rows2027.concat(rowsVigentes);
+    if (state.bloqueFiltro) {
+      combined = combined.filter((r) => r.bloque === state.bloqueFiltro);
     }
 
-    const heading2029 = document.createElement("li");
-    heading2029.className = "panel-section-title panel-section-title-2029";
-    heading2029.textContent = `Mandato vigente hasta 2029 (${rowsVigentes.length})`;
-    panelListEl.appendChild(heading2029);
-    if (rowsVigentes.length === 0) {
+    const vencenCount = combined.filter((r) => r.finalizaAnio === 2027).length;
+    const continuanCount = combined.length - vencenCount;
+    panelCountEl.textContent = `${vencenCount} vence${vencenCount === 1 ? "" : "n"} el 9/12/2027 · ${continuanCount} con mandato vigente hasta 2029`;
+
+    combined
+      .slice()
+      .sort((a, b) => {
+        const byBloque = a.bloque.localeCompare(b.bloque, "es");
+        return byBloque !== 0 ? byBloque : a.apellido.localeCompare(b.apellido, "es");
+      })
+      .forEach((row) => panelListEl.appendChild(legislatorLi(row, row.finalizaAnio !== 2027)));
+
+    if (combined.length === 0) {
       const li = document.createElement("li");
       li.className = "panel-empty";
-      li.textContent = "Ningún diputado de esta provincia tiene mandato hasta 2029.";
+      li.textContent = state.bloqueFiltro
+        ? "Ningún diputado de este bloque en esta provincia."
+        : "No hay diputados registrados para esta provincia.";
       panelListEl.appendChild(li);
-    } else {
-      rowsVigentes
-        .slice()
-        .sort((a, b) => a.apellido.localeCompare(b.apellido, "es"))
-        .forEach((row) => panelListEl.appendChild(legislatorLi(row, "panel-row-2029")));
     }
   }
 

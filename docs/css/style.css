@@ -97,6 +97,11 @@ a{color:var(--brand-primary)}
 }
 
 /* ---------- Leyenda de desdoblamiento (siempre visible) ---------- */
+/* z-index por encima de .panel-overlay (999) para que siga siendo clickeable
+   con el panel lateral de una provincia abierto. */
+.controls, .badge-legend{
+  position:relative;z-index:1001;
+}
 .badge-legend{
   display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 14px;
 }
@@ -231,20 +236,15 @@ a{color:var(--brand-primary)}
 .pl-bloque{display:block;font-size:11px;color:var(--ink-muted);margin-top:1px}
 .panel-empty{font-size:13px;color:var(--ink-faint);padding:12px 0}
 
-.panel-section-title{
-  display:block;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.6px;
-  color:var(--brand-primary);padding:16px 0 6px;border-bottom:2px solid var(--brand-primary);
-  margin-top:4px;
-}
-.panel-list li.panel-section-title:first-child{margin-top:0;padding-top:0}
-.panel-section-title-2029{
-  color:var(--ink-muted);border-bottom-color:var(--ink-faint);margin-top:14px;
-}
 .panel-row-2029{
   background:var(--bg-elevated);border-left:3px solid var(--ink-faint);
   padding-left:8px;margin-left:-11px;
 }
-.panel-row-2029 .pl-name{color:var(--ink-muted)}
+.panel-row-2029 .pl-name{color:var(--ink-muted);font-style:italic}
+.pl-tag{
+  display:inline-block;font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.3px;
+  color:var(--ink-faint);background:#e7edf3;border-radius:8px;padding:1px 6px;margin-left:6px;
+}
 
 .panel-overlay{
   position:fixed;inset:0;background:rgba(15,35,60,.28);z-index:999;
