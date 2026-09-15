@@ -271,6 +271,54 @@ function styleForProvince(provKey) {
 // ---------------------------------------------------------------------
 let map;
 
+// CABA es geográficamente minúscula y queda oculta dentro de Buenos Aires al
+// alejar el zoom. Se agrega un marcador de radio fijo en píxeles (no se
+// achica con el mapa) con una etiqueta siempre visible, que además sirve
+// como blanco de clic más grande que el propio polígono.
+const CABA_KEY = "CIUDAD AUTONOMA DE BUENOS AIRES";
+let cabaMarker = null;
+
+function findFeatureLayer(key) {
+  let found = null;
+  state.geoLayer.eachLayer((layer) => {
+    if (canonProvinciaFromGeojson(layer.feature.properties.nombre) === key) found = layer;
+  });
+  return found;
+}
+
+function addCabaMarker() {
+  if (cabaMarker) return; // ya creado
+  const provinceLayer = findFeatureLayer(CABA_KEY);
+  if (!provinceLayer) return;
+  try {
+    const center = provinceLayer.getBounds().getCenter();
+    cabaMarker = L.circleMarker(center, {
+      radius: 6,
+      weight: 2,
+      color: "#ffffff",
+      fillOpacity: 1,
+    }).addTo(map);
+    cabaMarker.bindTooltip("CABA", {
+      permanent: true,
+      direction: "right",
+      offset: [7, 0],
+      className: "caba-marker-label",
+    });
+    cabaMarker.on({
+      mouseover: (e) => e.target.setStyle({ weight: 3 }),
+      mouseout: (e) => e.target.setStyle({ weight: 2 }),
+      click: () => openPanel(CABA_KEY),
+    });
+  } catch (e) {
+    // El mapa puede no tener aún tamaño real (layout/fuentes asentándose);
+    // se reintenta en las siguientes llamadas a fitToArgentina().
+    if (cabaMarker) {
+      map.removeLayer(cabaMarker);
+    }
+    cabaMarker = null;
+  }
+}
+
 // Bounds del territorio continental + Tierra del Fuego (el reclamo antártico
 // ya se removió de la geometría en build_data.py).
 const ARGENTINA_BOUNDS = L.latLngBounds([
@@ -316,6 +364,7 @@ function initMap(geojson) {
   const fitToArgentina = () => {
     map.invalidateSize();
     map.fitBounds(ARGENTINA_BOUNDS, { padding: [14, 14] });
+    addCabaMarker();
   };
   fitToArgentina();
   [100, 300, 700, 1200].forEach((ms) => setTimeout(fitToArgentina, ms));
@@ -369,6 +418,10 @@ function refreshMapStyles() {
       className: "province-tooltip-wrap",
     });
   });
+  if (cabaMarker) {
+    const style = styleForProvince(CABA_KEY);
+    cabaMarker.setStyle({ fillColor: style.fillColor, fillOpacity: 1 });
+  }
 }
 
 // ---------------------------------------------------------------------
