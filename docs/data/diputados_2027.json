@@ -1,0 +1,782 @@
+[
+  {
+    "apellido": "Aguirre",
+    "nombre": "Hilda",
+    "provincia": "LA RIOJA",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Alí",
+    "nombre": "Ernesto Pipi\"\"",
+    "provincia": "SAN LUIS",
+    "bloque": "PRIMERO SAN LUIS"
+  },
+  {
+    "apellido": "Almirón",
+    "nombre": "Lisandro",
+    "provincia": "CORRIENTES",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Álvarez",
+    "nombre": "Claudio",
+    "provincia": "SAN LUIS",
+    "bloque": "ARGENTINA FEDERAL"
+  },
+  {
+    "apellido": "Andrade",
+    "nombre": "Javier",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Ansaloni",
+    "nombre": "Pablo",
+    "provincia": "BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Arabia",
+    "nombre": "Damián",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Araujo Hernández",
+    "nombre": "Jorge Neri",
+    "provincia": "TIERRA DEL FUEGO",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Ardohain",
+    "nombre": "Martín",
+    "provincia": "LA PAMPA",
+    "bloque": "PRO"
+  },
+  {
+    "apellido": "Arrieta",
+    "nombre": "Lourdes Micaela",
+    "provincia": "MENDOZA",
+    "bloque": "PROVINCIAS UNIDAS"
+  },
+  {
+    "apellido": "Arrúa",
+    "nombre": "Alberto",
+    "provincia": "MISIONES",
+    "bloque": "ARGENTINA FEDERAL"
+  },
+  {
+    "apellido": "Aveiro",
+    "nombre": "Martín",
+    "provincia": "MENDOZA",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Avico",
+    "nombre": "Belén",
+    "provincia": "CORDOBA",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Avila",
+    "nombre": "Jorge Antonio",
+    "provincia": "CHUBUT",
+    "bloque": "PROVINCIAS UNIDAS"
+  },
+  {
+    "apellido": "Avila",
+    "nombre": "Fernanda",
+    "provincia": "CATAMARCA",
+    "bloque": "ELIJO CATAMARCA"
+  },
+  {
+    "apellido": "Banfi",
+    "nombre": "Karina",
+    "provincia": "BUENOS AIRES",
+    "bloque": "ADELANTE BUENOS AIRES"
+  },
+  {
+    "apellido": "Basterra",
+    "nombre": "Luis Eugenio",
+    "provincia": "FORMOSA",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Benedit",
+    "nombre": "Beltrán",
+    "provincia": "ENTRE RIOS",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Benegas Lynch",
+    "nombre": "Bertie",
+    "provincia": "BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Bianchetti",
+    "nombre": "Emmanuel",
+    "provincia": "MISIONES",
+    "bloque": "PRO"
+  },
+  {
+    "apellido": "Bonacci",
+    "nombre": "Rocío",
+    "provincia": "SANTA FE",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Bongiovanni",
+    "nombre": "Alejandro",
+    "provincia": "SANTA FE",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Bordet",
+    "nombre": "Gustavo",
+    "provincia": "ENTRE RIOS",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Bornoroni",
+    "nombre": "Gabriel",
+    "provincia": "CORDOBA",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Bruno",
+    "nombre": "Eliana",
+    "provincia": "SALTA",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Brügge",
+    "nombre": "Juan Fernando",
+    "provincia": "CORDOBA",
+    "bloque": "PROVINCIAS UNIDAS"
+  },
+  {
+    "apellido": "Cafiero",
+    "nombre": "Santiago",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Campero",
+    "nombre": "Mariano",
+    "provincia": "TUCUMAN",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Campitelli",
+    "nombre": "Celia",
+    "provincia": "SANTIAGO DEL ESTERO",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Capozzi",
+    "nombre": "Sergio Eduardo",
+    "provincia": "RIO NEGRO",
+    "bloque": "PROVINCIAS UNIDAS"
+  },
+  {
+    "apellido": "Carignano",
+    "nombre": "Florencia",
+    "provincia": "SANTA FE",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Casas",
+    "nombre": "Sergio Guillermo",
+    "provincia": "LA RIOJA",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Castagneto",
+    "nombre": "Carlos Daniel",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Chica",
+    "nombre": "Jorge",
+    "provincia": "SAN JUAN",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Cipolini",
+    "nombre": "Gerardo",
+    "provincia": "CHACO",
+    "bloque": "UCR - UNIÓN CÍVICA RADICAL"
+  },
+  {
+    "apellido": "Cisneros",
+    "nombre": "Carlos",
+    "provincia": "TUCUMAN",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Coletta",
+    "nombre": "Mariela",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "PROVINCIAS UNIDAS"
+  },
+  {
+    "apellido": "Correa Llano",
+    "nombre": "Facundo",
+    "provincia": "MENDOZA",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Daives",
+    "nombre": "Ricardo",
+    "provincia": "SANTIAGO DEL ESTERO",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Diez",
+    "nombre": "Romina",
+    "provincia": "SANTA FE",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Estévez",
+    "nombre": "Gabriela Beatriz",
+    "provincia": "CORDOBA",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Falcone",
+    "nombre": "Eduardo",
+    "provincia": "BUENOS AIRES",
+    "bloque": "MID - MOVIMIENTO DE INTEGRACIÓN Y DESARROLLO"
+  },
+  {
+    "apellido": "Fernández",
+    "nombre": "Elia Marina",
+    "provincia": "TUCUMAN",
+    "bloque": "INDEPENDENCIA"
+  },
+  {
+    "apellido": "Fernández Molero",
+    "nombre": "Daiana",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "PRO"
+  },
+  {
+    "apellido": "Ferraro",
+    "nombre": "Maximiliano",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "COALICION CIVICA"
+  },
+  {
+    "apellido": "Ferreyra",
+    "nombre": "Alida",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Frade",
+    "nombre": "Mónica",
+    "provincia": "BUENOS AIRES",
+    "bloque": "COALICION CIVICA"
+  },
+  {
+    "apellido": "Freites",
+    "nombre": "Andrea",
+    "provincia": "TIERRA DEL FUEGO",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "García",
+    "nombre": "Carlos",
+    "provincia": "CHACO",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Garrido",
+    "nombre": "José Luis",
+    "provincia": "SANTA CRUZ",
+    "bloque": "POR SANTA CRUZ"
+  },
+  {
+    "apellido": "Giordano",
+    "nombre": "Juan Carlos",
+    "provincia": "BUENOS AIRES",
+    "bloque": "IZQUIERDA SOCIALISTA - FRENTE DE IZQUIERDA UNIDAD"
+  },
+  {
+    "apellido": "Giudici",
+    "nombre": "Silvana",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Giuliano",
+    "nombre": "Diego A.",
+    "provincia": "SANTA FE",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Glinski",
+    "nombre": "José",
+    "provincia": "CHUBUT",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Gomez",
+    "nombre": "José",
+    "provincia": "SANTIAGO DEL ESTERO",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "González",
+    "nombre": "Gerardo Gustavo",
+    "provincia": "FORMOSA",
+    "bloque": "ARGENTINA FEDERAL"
+  },
+  {
+    "apellido": "González",
+    "nombre": "Álvaro",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "PRO"
+  },
+  {
+    "apellido": "Gutiérrez",
+    "nombre": "Ramiro",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Gutiérrez",
+    "nombre": "Carlos",
+    "provincia": "CORDOBA",
+    "bloque": "PROVINCIAS UNIDAS"
+  },
+  {
+    "apellido": "Huesen",
+    "nombre": "Gerardo",
+    "provincia": "TUCUMAN",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Ianni",
+    "nombre": "Ana María",
+    "provincia": "SANTA CRUZ",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Ibañez",
+    "nombre": "María Cecilia",
+    "provincia": "CORDOBA",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Juliano",
+    "nombre": "Pablo",
+    "provincia": "BUENOS AIRES",
+    "bloque": "PROVINCIAS UNIDAS"
+  },
+  {
+    "apellido": "Kirchner",
+    "nombre": "Máximo Carlos",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Leiva",
+    "nombre": "Aldo",
+    "provincia": "CHACO",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Lemoine",
+    "nombre": "Lilia",
+    "provincia": "BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Llano",
+    "nombre": "Mercedes",
+    "provincia": "MENDOZA",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Macyszyn",
+    "nombre": "Lorena",
+    "provincia": "BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Mango",
+    "nombre": "Marcelo",
+    "provincia": "RIO NEGRO",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Manrique",
+    "nombre": "Mario",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Marino",
+    "nombre": "Juan",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Martínez",
+    "nombre": "Germán Pedro",
+    "provincia": "SANTA FE",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Massot",
+    "nombre": "Nicolás",
+    "provincia": "BUENOS AIRES",
+    "bloque": "ENCUENTRO FEDERAL"
+  },
+  {
+    "apellido": "Mayoraz",
+    "nombre": "Nicolás",
+    "provincia": "SANTA FE",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Menem",
+    "nombre": "Martín",
+    "provincia": "LA RIOJA",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Molle",
+    "nombre": "Matías",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Montenegro",
+    "nombre": "Guillermo",
+    "provincia": "BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Monzón",
+    "nombre": "Roxana",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Morchio",
+    "nombre": "Francisco",
+    "provincia": "ENTRE RIOS",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Moreau",
+    "nombre": "Cecilia",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Moreno Ovalle",
+    "nombre": "Julio",
+    "provincia": "SALTA",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Muñoz",
+    "nombre": "Gabriela Luciana",
+    "provincia": "NEUQUEN",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Neder",
+    "nombre": "Estela Mary",
+    "provincia": "SANTIAGO DEL ESTERO",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Nieri",
+    "nombre": "Lisandro",
+    "provincia": "MENDOZA",
+    "bloque": "UCR - UNIÓN CÍVICA RADICAL"
+  },
+  {
+    "apellido": "Nóblega",
+    "nombre": "Sebastián",
+    "provincia": "CATAMARCA",
+    "bloque": "ELIJO CATAMARCA"
+  },
+  {
+    "apellido": "Nuñez",
+    "nombre": "José",
+    "provincia": "SANTA FE",
+    "bloque": "PROVINCIAS UNIDAS"
+  },
+  {
+    "apellido": "Osuna",
+    "nombre": "Blanca Inés",
+    "provincia": "ENTRE RIOS",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Outes",
+    "nombre": "Pablo",
+    "provincia": "SALTA",
+    "bloque": "ARGENTINA FEDERAL"
+  },
+  {
+    "apellido": "Pagano",
+    "nombre": "Marcela Marina",
+    "provincia": "BUENOS AIRES",
+    "bloque": "COHERENCIA"
+  },
+  {
+    "apellido": "Parola",
+    "nombre": "María Graciela",
+    "provincia": "FORMOSA",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Pauli",
+    "nombre": "Santiago",
+    "provincia": "TIERRA DEL FUEGO",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Paulón",
+    "nombre": "Esteban",
+    "provincia": "SANTA FE",
+    "bloque": "PROVINCIAS UNIDAS"
+  },
+  {
+    "apellido": "Peluc",
+    "nombre": "José",
+    "provincia": "SAN JUAN",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Penacca",
+    "nombre": "Paula Andrea",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Petrovich",
+    "nombre": "María Lorena",
+    "provincia": "BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Picat",
+    "nombre": "Luis Albino",
+    "provincia": "CORDOBA",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Pichetto",
+    "nombre": "Miguel Ángel",
+    "provincia": "BUENOS AIRES",
+    "bloque": "ENCUENTRO FEDERAL"
+  },
+  {
+    "apellido": "Picón Martínez",
+    "nombre": "Nancy Viviana",
+    "provincia": "SAN JUAN",
+    "bloque": "PRODUCCION Y TRABAJO"
+  },
+  {
+    "apellido": "Pokoik",
+    "nombre": "Lorena",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Ponce",
+    "nombre": "María Celeste",
+    "provincia": "CORDOBA",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Potenza",
+    "nombre": "Luciana",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Quintar",
+    "nombre": "Manuel",
+    "provincia": "JUJUY",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Rauschenberger",
+    "nombre": "Ariel",
+    "provincia": "LA PAMPA",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Razzini",
+    "nombre": "Verónica",
+    "provincia": "SANTA FE",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Ritondo",
+    "nombre": "Cristian A.",
+    "provincia": "BUENOS AIRES",
+    "bloque": "PRO"
+  },
+  {
+    "apellido": "Rizzotti",
+    "nombre": "Jorge",
+    "provincia": "JUJUY",
+    "bloque": "PROVINCIAS UNIDAS"
+  },
+  {
+    "apellido": "Ruíz",
+    "nombre": "Yamila",
+    "provincia": "MISIONES",
+    "bloque": "ARGENTINA FEDERAL"
+  },
+  {
+    "apellido": "Sand",
+    "nombre": "Nancy",
+    "provincia": "CORRIENTES",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Santillán Juárez Brahim",
+    "nombre": "Juliana",
+    "provincia": "BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Santurio",
+    "nombre": "Santiago",
+    "provincia": "BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Selva",
+    "nombre": "Sabrina",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Snopek",
+    "nombre": "Guillermo",
+    "provincia": "JUJUY",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Strada",
+    "nombre": "Julia",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Tailhade",
+    "nombre": "Rodolfo",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Todero",
+    "nombre": "Pablo",
+    "provincia": "NEUQUEN",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Tolosa Paz",
+    "nombre": "Victoria",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Torres",
+    "nombre": "Alejandra",
+    "provincia": "CORDOBA",
+    "bloque": "PROVINCIAS UNIDAS"
+  },
+  {
+    "apellido": "Tournier",
+    "nombre": "José Federico",
+    "provincia": "CORRIENTES",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Treffinger",
+    "nombre": "César",
+    "provincia": "CHUBUT",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Valdés",
+    "nombre": "Eduardo Félix",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Vancsik",
+    "nombre": "Daniel",
+    "provincia": "MISIONES",
+    "bloque": "ARGENTINA FEDERAL"
+  },
+  {
+    "apellido": "Vásquez",
+    "nombre": "Patricia",
+    "provincia": "BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Vega",
+    "nombre": "Yolanda",
+    "provincia": "SALTA",
+    "bloque": "ARGENTINA FEDERAL"
+  },
+  {
+    "apellido": "Villaverde",
+    "nombre": "Lorena",
+    "provincia": "RIO NEGRO",
+    "bloque": "LA LIBERTAD AVANZA"
+  },
+  {
+    "apellido": "Volnovich",
+    "nombre": "Luana",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Yedlin",
+    "nombre": "Pablo Raúl",
+    "provincia": "TUCUMAN",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Yeza",
+    "nombre": "Martín",
+    "provincia": "BUENOS AIRES",
+    "bloque": "PRO"
+  },
+  {
+    "apellido": "Zago",
+    "nombre": "Oscar",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "MID - MOVIMIENTO DE INTEGRACIÓN Y DESARROLLO"
+  },
+  {
+    "apellido": "Zaracho",
+    "nombre": "Natalia",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA"
+  },
+  {
+    "apellido": "Zulli",
+    "nombre": "Christian Alejandro",
+    "provincia": "CORRIENTES",
+    "bloque": "UNIÓN POR LA PATRIA"
+  }
+]

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Renovación del Congreso 2027</title>
+<meta name="description" content="Mapa interactivo de la renovación de bancas del Congreso de la Nación Argentina en 2027.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23005ca9'/%3E%3Ctext x='32' y='42' font-family='Arial,Helvetica,sans-serif' font-size='22' font-weight='700' fill='%23ffffff' text-anchor='middle'%3E27%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-brand">
+      <span class="header-inst">Congreso de la Nación Argentina</span>
+      <h1 class="header-title">Renovación legislativa 2027</h1>
+      <p class="header-sub">Mapa de bancas de Diputados y Senadores que vencen el 9 de diciembre de 2027</p>
+    </div>
+  </div>
+</header>
+
+<main class="app">
+
+  <div class="controls">
+    <div class="chamber-toggle" role="tablist" aria-label="Cámara">
+      <button class="chamber-btn active" data-chamber="senado" role="tab" aria-selected="true">Senado</button>
+      <button class="chamber-btn" data-chamber="diputados" role="tab" aria-selected="false">Diputados</button>
+    </div>
+
+    <div class="bloque-filter" id="bloqueFilterWrap" hidden>
+      <label for="bloqueSelect">Filtrar por bloque</label>
+      <select id="bloqueSelect">
+        <option value="">Todos los bloques (sin coropleta)</option>
+      </select>
+    </div>
+
+    <p class="controls-hint" id="controlsHint"></p>
+  </div>
+
+  <div class="map-wrap">
+    <div id="map" aria-label="Mapa de provincias argentinas"></div>
+
+    <div class="legend" id="legend"></div>
+  </div>
+
+</main>
+
+<aside class="panel" id="panel" aria-hidden="true">
+  <div class="panel-inner">
+    <button class="panel-close" id="panelClose" aria-label="Cerrar">&times;</button>
+    <h2 class="panel-title" id="panelTitle">Provincia</h2>
+    <div class="panel-badge" id="panelBadge"></div>
+    <p class="panel-count" id="panelCount"></p>
+    <ul class="panel-list" id="panelList"></ul>
+  </div>
+</aside>
+<div class="panel-overlay" id="panelOverlay"></div>
+
+<footer class="site-footer">
+  <p>Fuentes: nómina de diputados y de senadores provista por el usuario (mandatos 2023–2027 y 2023–2029);
+    desdoblamiento electoral 2027 reconstruido a partir de notas periodísticas;
+    geometría de provincias: <a href="https://datos.gob.ar/dataset/georef-argentina" target="_blank" rel="noopener">API Georef (datos.gob.ar)</a>.</p>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="js/app.js"></script>
+</body>
+</html>

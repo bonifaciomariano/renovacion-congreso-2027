@@ -1,0 +1,13 @@
+[
+  {"provincia": "TUCUMAN", "estado": "desdobla", "fecha": "2027-05-09", "nota": "Fecha propia fijada por el gobernador Jaldo"},
+  {"provincia": "CHACO", "estado": "desdobla", "fecha": null, "nota": "Por mandato constitucional"},
+  {"provincia": "TIERRA DEL FUEGO", "estado": "desdobla", "fecha": null, "nota": "Por mandato constitucional"},
+  {"provincia": "CATAMARCA", "estado": "no_desdobla", "fecha": null, "nota": "Anunciado por el gobernador Jalil"},
+  {"provincia": "MENDOZA", "estado": "en_definicion", "fecha": null, "nota": null},
+  {"provincia": "SANTA FE", "estado": "en_definicion", "fecha": null, "nota": null},
+  {"provincia": "SALTA", "estado": "en_definicion", "fecha": null, "nota": null},
+  {"provincia": "NEUQUEN", "estado": "en_definicion", "fecha": null, "nota": null},
+  {"provincia": "RIO NEGRO", "estado": "en_definicion", "fecha": null, "nota": null},
+  {"provincia": "ENTRE RIOS", "estado": "en_definicion", "fecha": null, "nota": null},
+  {"provincia": "SAN JUAN", "estado": "en_definicion", "fecha": null, "nota": null}
+]

@@ -1,0 +1,7 @@
+# Archivos fuente originales (contienen datos de contacto personal de legisladores,
+# no se versionan). Los JSON derivados en data/ y docs/data/ sí se versionan.
+data/*.csv
+data/*.xlsx
+data/*.xls
+__pycache__/
+*.pyc
