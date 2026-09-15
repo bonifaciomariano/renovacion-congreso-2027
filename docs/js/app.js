@@ -292,22 +292,19 @@ function addCabaMarker() {
   if (!provinceLayer) return;
   try {
     const center = provinceLayer.getBounds().getCenter();
-    cabaMarker = L.circleMarker(center, {
-      radius: 6,
-      weight: 2,
-      color: "#ffffff",
-      fillOpacity: 1,
-    }).addTo(map);
-    cabaMarker.bindTooltip("CABA", {
-      permanent: true,
-      direction: "right",
-      offset: [7, 0],
-      className: "caba-marker-label",
+    // Punto + etiqueta en un único elemento HTML: así todo el marcador
+    // (no sólo el puntito) es un blanco de clic grande y directo.
+    const icon = L.divIcon({
+      className: "caba-div-icon",
+      html: '<span class="caba-dot"></span><span class="caba-label">CABA</span>',
+      iconSize: [58, 22],
+      iconAnchor: [7, 11],
     });
+    cabaMarker = L.marker(center, { icon, keyboard: false }).addTo(map);
     cabaMarker.on({
-      mouseover: (e) => e.target.setStyle({ weight: 3 }),
-      mouseout: (e) => e.target.setStyle({ weight: 2 }),
       click: () => openPanel(CABA_KEY),
+      mouseover: (e) => e.target.getElement()?.classList.add("caba-hover"),
+      mouseout: (e) => e.target.getElement()?.classList.remove("caba-hover"),
     });
   } catch (e) {
     // El mapa puede no tener aún tamaño real (layout/fuentes asentándose);
@@ -420,7 +417,8 @@ function refreshMapStyles() {
   });
   if (cabaMarker) {
     const style = styleForProvince(CABA_KEY);
-    cabaMarker.setStyle({ fillColor: style.fillColor, fillOpacity: 1 });
+    const dot = cabaMarker.getElement()?.querySelector(".caba-dot");
+    if (dot) dot.style.background = style.fillColor;
   }
 }
 
