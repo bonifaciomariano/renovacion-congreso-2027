@@ -1,0 +1,506 @@
+[
+  {
+    "apellido": "ABAD",
+    "nombre": "MAXIMILIANO",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UCR - UNIÓN CÍVICA RADICAL",
+    "ceseAnio": 2029
+  },
+  {
+    "apellido": "ABDALA",
+    "nombre": "BARTOLOMÉ ESTEBAN",
+    "provincia": "SAN LUIS",
+    "bloque": "LA LIBERTAD AVANZA",
+    "ceseAnio": 2029
+  },
+  {
+    "apellido": "ALMEIDA",
+    "nombre": "ROMINA MARÍA",
+    "provincia": "ENTRE RIOS",
+    "bloque": "LA LIBERTAD AVANZA",
+    "ceseAnio": 2031
+  },
+  {
+    "apellido": "ALVAREZ RIVERO",
+    "nombre": "CARMEN",
+    "provincia": "CORDOBA",
+    "bloque": "LA LIBERTAD AVANZA",
+    "ceseAnio": 2027
+  },
+  {
+    "apellido": "ANDRADA",
+    "nombre": "GUILLERMO EDUARDO",
+    "provincia": "CATAMARCA",
+    "bloque": "CONVICCIÓN FEDERAL",
+    "ceseAnio": 2027
+  },
+  {
+    "apellido": "ARCE",
+    "nombre": "CARLOS OMAR",
+    "provincia": "MISIONES",
+    "bloque": "ENCUENTRO MISIONERO",
+    "ceseAnio": 2029
+  },
+  {
+    "apellido": "ARRASCAETA",
+    "nombre": "IVANNA MARCELA",
+    "provincia": "SAN LUIS",
+    "bloque": "LA LIBERTAD AVANZA",
+    "ceseAnio": 2029
+  },
+  {
+    "apellido": "ATAUCHE",
+    "nombre": "EZEQUIEL",
+    "provincia": "JUJUY",
+    "bloque": "LA LIBERTAD AVANZA",
+    "ceseAnio": 2029
+  },
+  {
+    "apellido": "AVILA",
+    "nombre": "BEATRIZ LUISA",
+    "provincia": "TUCUMAN",
+    "bloque": "INDEPENDENCIA",
+    "ceseAnio": 2027
+  },
+  {
+    "apellido": "BAHL",
+    "nombre": "ADÁN HUMBERTO",
+    "provincia": "ENTRE RIOS",
+    "bloque": "JUSTICIALISTA",
+    "ceseAnio": 2031
+  },
+  {
+    "apellido": "BEDIA",
+    "nombre": "VILMA FACUNDA",
+    "provincia": "JUJUY",
+    "bloque": "LA LIBERTAD AVANZA",
+    "ceseAnio": 2029
+  },
+  {
+    "apellido": "BENEGAS LYNCH",
+    "nombre": "JOAQUÍN ALBERTO",
+    "provincia": "ENTRE RIOS",
+    "bloque": "LA LIBERTAD AVANZA",
+    "ceseAnio": 2031
+  },
+  {
+    "apellido": "BENSUSÁN",
+    "nombre": "DANIEL PABLO",
+    "provincia": "LA PAMPA",
+    "bloque": "JUSTICIALISTA",
+    "ceseAnio": 2027
+  },
+  {
+    "apellido": "BULLRICH",
+    "nombre": "PATRICIA",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "ceseAnio": 2031
+  },
+  {
+    "apellido": "CAPITANICH",
+    "nombre": "JORGE MILTON",
+    "provincia": "CHACO",
+    "bloque": "JUSTICIALISTA",
+    "ceseAnio": 2031
+  },
+  {
+    "apellido": "CARAMBIA",
+    "nombre": "JOSÉ MARÍA",
+    "provincia": "SANTA CRUZ",
+    "bloque": "MOVERE SANTA CRUZ",
+    "ceseAnio": 2029
+  },
+  {
+    "apellido": "CERVI",
+    "nombre": "MARIO PABLO",
+    "provincia": "NEUQUEN",
+    "bloque": "LA LIBERTAD AVANZA",
+    "ceseAnio": 2031
+  },
+  {
+    "apellido": "CORPACCI",
+    "nombre": "LUCÍA BENIGNA",
+    "provincia": "CATAMARCA",
+    "bloque": "JUSTICIALISTA",
+    "ceseAnio": 2027
+  },
+  {
+    "apellido": "CORROZA",
+    "nombre": "JULIETA",
+    "provincia": "NEUQUEN",
+    "bloque": "LA NEUQUINIDAD",
+    "ceseAnio": 2031
+  },
+  {
+    "apellido": "COTO",
+    "nombre": "AGUSTÍN PEDRO",
+    "provincia": "TIERRA DEL FUEGO, ANTARTIDA E ISLAS DEL ATLANTICO SUR",
+    "bloque": "LA LIBERTAD AVANZA",
+    "ceseAnio": 2031
+  },
+  {
+    "apellido": "CRISTINA",
+    "nombre": "ANDREA MARCELA",
+    "provincia": "CHUBUT",
+    "bloque": "FRENTE PRO",
+    "ceseAnio": 2027
+  },
+  {
+    "apellido": "DE PEDRO",
+    "nombre": "EDUARDO ENRIQUE",
+    "provincia": "BUENOS AIRES",
+    "bloque": "JUSTICIALISTA",
+    "ceseAnio": 2029
+  },
+  {
+    "apellido": "DI TULLIO",
+    "nombre": "JULIANA",
+    "provincia": "BUENOS AIRES",
+    "bloque": "JUSTICIALISTA",
+    "ceseAnio": 2029
+  },
+  {
+    "apellido": "ESPÍNOLA",
+    "nombre": "CARLOS MAURICIO",
+    "provincia": "CORRIENTES",
+    "bloque": "PROVINCIAS UNIDAS",
+    "ceseAnio": 2027
+  },
+  {
+    "apellido": "FAMA",
+    "nombre": "FLAVIO SERGIO",
+    "provincia": "CATAMARCA",
+    "bloque": "UCR - UNIÓN CÍVICA RADICAL",
+    "ceseAnio": 2027
+  },
+  {
+    "apellido": "FERNÁNDEZ SAGASTI",
+    "nombre": "ANABEL",
+    "provincia": "MENDOZA",
+    "bloque": "JUSTICIALISTA",
+    "ceseAnio": 2027
+  },
+  {
+    "apellido": "FULLONE",
+    "nombre": "ENZO PAOLO",
+    "provincia": "RIO NEGRO",
+    "bloque": "LA LIBERTAD AVANZA",
+    "ceseAnio": 2031
+  },
+  {
+    "apellido": "GADANO",
+    "nombre": "NATALIA ELENA",
+    "provincia": "SANTA CRUZ",
+    "bloque": "MOVERE SANTA CRUZ",
+    "ceseAnio": 2029
+  },
+  {
+    "apellido": "GALARETTO",
+    "nombre": "EDUARDO HORACIO",
+    "provincia": "SANTA FE",
+    "bloque": "UCR - UNIÓN CÍVICA RADICAL",
+    "ceseAnio": 2027
+  },
+  {
+    "apellido": "GIMÉNEZ NAVARRO",
+    "nombre": "MARÍA CELESTE",
+    "provincia": "SAN JUAN",
+    "bloque": "JUSTICIALISTA",
+    "ceseAnio": 2029
+  },
+  {
+    "apellido": "GODOY",
+    "nombre": "JUAN CRUZ",
+    "provincia": "CHACO",
+    "bloque": "LA LIBERTAD AVANZA",
+    "ceseAnio": 2031
+  },
+  {
+    "apellido": "GOERLING LARA",
+    "nombre": "ENRIQUE MARTÍN",
+    "provincia": "MISIONES",
+    "bloque": "FRENTE PRO",
+    "ceseAnio": 2029
+  },
+  {
+    "apellido": "GONZÁLEZ",
+    "nombre": "MARÍA TERESA MARGARITA",
+    "provincia": "FORMOSA",
+    "bloque": "JUSTICIALISTA",
+    "ceseAnio": 2029
+  },
+  {
+    "apellido": "GUZMÁN CORAITA",
+    "nombre": "GONZALO",
+    "provincia": "SALTA",
+    "bloque": "LA LIBERTAD AVANZA",
+    "ceseAnio": 2031
+  },
+  {
+    "apellido": "HUALA",
+    "nombre": "MARÍA VICTORIA",
+    "provincia": "LA PAMPA",
+    "bloque": "FRENTE PRO",
+    "ceseAnio": 2027
+  },
+  {
+    "apellido": "JUEZ",
+    "nombre": "LUIS ALFREDO",
+    "provincia": "CORDOBA",
+    "bloque": "LA LIBERTAD AVANZA",
+    "ceseAnio": 2027
+  },
+  {
+    "apellido": "JURI",
+    "nombre": "MARIANA",
+    "provincia": "MENDOZA",
+    "bloque": "UCR - UNIÓN CÍVICA RADICAL",
+    "ceseAnio": 2027
+  },
+  {
+    "apellido": "KIRCHNER",
+    "nombre": "ALICIA MARGARITA ANTONIA",
+    "provincia": "SANTA CRUZ",
+    "bloque": "JUSTICIALISTA",
+    "ceseAnio": 2029
+  },
+  {
+    "apellido": "KRONEBERGER",
+    "nombre": "DANIEL RICARDO",
+    "provincia": "LA PAMPA",
+    "bloque": "UCR - UNIÓN CÍVICA RADICAL",
+    "ceseAnio": 2027
+  },
+  {
+    "apellido": "LEWANDOWSKI",
+    "nombre": "MARCELO NÉSTOR",
+    "provincia": "SANTA FE",
+    "bloque": "JUSTICIALISTA",
+    "ceseAnio": 2027
+  },
+  {
+    "apellido": "LINARES",
+    "nombre": "CARLOS ALBERTO",
+    "provincia": "CHUBUT",
+    "bloque": "JUSTICIALISTA",
+    "ceseAnio": 2027
+  },
+  {
+    "apellido": "LÓPEZ",
+    "nombre": "CÁNDIDA CRISTINA",
+    "provincia": "TIERRA DEL FUEGO, ANTARTIDA E ISLAS DEL ATLANTICO SUR",
+    "bloque": "JUSTICIALISTA",
+    "ceseAnio": 2031
+  },
+  {
+    "apellido": "LÓPEZ",
+    "nombre": "MARÍA FLORENCIA",
+    "provincia": "LA RIOJA",
+    "bloque": "JUSTICIALISTA",
+    "ceseAnio": 2029
+  },
+  {
+    "apellido": "LOSADA",
+    "nombre": "CAROLINA",
+    "provincia": "SANTA FE",
+    "bloque": "UCR - UNIÓN CÍVICA RADICAL",
+    "ceseAnio": 2027
+  },
+  {
+    "apellido": "MANZUR",
+    "nombre": "JUAN LUIS",
+    "provincia": "TUCUMAN",
+    "bloque": "JUSTICIALISTA",
+    "ceseAnio": 2027
+  },
+  {
+    "apellido": "MARKS",
+    "nombre": "ANA INÉS",
+    "provincia": "RIO NEGRO",
+    "bloque": "JUSTICIALISTA",
+    "ceseAnio": 2031
+  },
+  {
+    "apellido": "MÁRQUEZ",
+    "nombre": "NADIA JUDITH",
+    "provincia": "NEUQUEN",
+    "bloque": "LA LIBERTAD AVANZA",
+    "ceseAnio": 2031
+  },
+  {
+    "apellido": "MAYANS",
+    "nombre": "JOSÉ MIGUEL ÁNGEL",
+    "provincia": "FORMOSA",
+    "bloque": "JUSTICIALISTA",
+    "ceseAnio": 2029
+  },
+  {
+    "apellido": "MENDOZA",
+    "nombre": "SANDRA MARIELA",
+    "provincia": "TUCUMAN",
+    "bloque": "CONVICCIÓN FEDERAL",
+    "ceseAnio": 2027
+  },
+  {
+    "apellido": "MOISES",
+    "nombre": "MARÍA CAROLINA",
+    "provincia": "JUJUY",
+    "bloque": "CONVICCIÓN FEDERAL",
+    "ceseAnio": 2029
+  },
+  {
+    "apellido": "MONTE DE OCA",
+    "nombre": "MARÍA BELÉN",
+    "provincia": "TIERRA DEL FUEGO, ANTARTIDA E ISLAS DEL ATLANTICO SUR",
+    "bloque": "LA LIBERTAD AVANZA",
+    "ceseAnio": 2031
+  },
+  {
+    "apellido": "MONTEVERDE",
+    "nombre": "AGUSTÍN ANÍBAL",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "ceseAnio": 2031
+  },
+  {
+    "apellido": "MORENO",
+    "nombre": "ELIA ESTHER DEL CARMEN",
+    "provincia": "SANTIAGO DEL ESTERO",
+    "bloque": "FRENTE CÍVICO POR SANTIAGO",
+    "ceseAnio": 2031
+  },
+  {
+    "apellido": "NEDER",
+    "nombre": "JOSÉ EMILIO",
+    "provincia": "SANTIAGO DEL ESTERO",
+    "bloque": "JUSTICIALISTA",
+    "ceseAnio": 2031
+  },
+  {
+    "apellido": "OLIVERA LUCERO",
+    "nombre": "BRUNO ANTONIO",
+    "provincia": "SAN JUAN",
+    "bloque": "LA LIBERTAD AVANZA",
+    "ceseAnio": 2029
+  },
+  {
+    "apellido": "OROZCO",
+    "nombre": "MARÍA EMILIA",
+    "provincia": "SALTA",
+    "bloque": "LA LIBERTAD AVANZA",
+    "ceseAnio": 2031
+  },
+  {
+    "apellido": "PAGOTTO",
+    "nombre": "JUAN CARLOS",
+    "provincia": "LA RIOJA",
+    "bloque": "LA LIBERTAD AVANZA",
+    "ceseAnio": 2029
+  },
+  {
+    "apellido": "PAOLTRONI",
+    "nombre": "FRANCISCO MANUEL",
+    "provincia": "FORMOSA",
+    "bloque": "LA LIBERTAD AVANZA",
+    "ceseAnio": 2029
+  },
+  {
+    "apellido": "RECALDE",
+    "nombre": "MARIANO",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "JUSTICIALISTA",
+    "ceseAnio": 2031
+  },
+  {
+    "apellido": "REJAL",
+    "nombre": "JESÚS FERNANDO",
+    "provincia": "LA RIOJA",
+    "bloque": "JUSTICIA SOCIAL FEDERAL",
+    "ceseAnio": 2029
+  },
+  {
+    "apellido": "ROJAS DECUT",
+    "nombre": "SONIA ELIZABETH",
+    "provincia": "MISIONES",
+    "bloque": "MOVIMIENTO POR MISIONES",
+    "ceseAnio": 2029
+  },
+  {
+    "apellido": "ROYON",
+    "nombre": "FLAVIA GABRIELA",
+    "provincia": "SALTA",
+    "bloque": "PRIMERO LOS SALTEÑOS",
+    "ceseAnio": 2031
+  },
+  {
+    "apellido": "SALINO",
+    "nombre": "FERNANDO ALDO",
+    "provincia": "SAN LUIS",
+    "bloque": "JUSTICIA SOCIAL FEDERAL",
+    "ceseAnio": 2029
+  },
+  {
+    "apellido": "SCHNEIDER",
+    "nombre": "SILVANA LORENA",
+    "provincia": "CHACO",
+    "bloque": "UCR - UNIÓN CÍVICA RADICAL",
+    "ceseAnio": 2031
+  },
+  {
+    "apellido": "SORIA",
+    "nombre": "MARTIN IGNACIO",
+    "provincia": "RIO NEGRO",
+    "bloque": "JUSTICIALISTA",
+    "ceseAnio": 2031
+  },
+  {
+    "apellido": "SUÁREZ",
+    "nombre": "RODOLFO ALEJANDRO",
+    "provincia": "MENDOZA",
+    "bloque": "UCR - UNIÓN CÍVICA RADICAL",
+    "ceseAnio": 2027
+  },
+  {
+    "apellido": "TERENZI",
+    "nombre": "EDITH ELIZABETH",
+    "provincia": "CHUBUT",
+    "bloque": "DESPIERTA CHUBUT",
+    "ceseAnio": 2027
+  },
+  {
+    "apellido": "UÑAC",
+    "nombre": "SERGIO MAURICIO",
+    "provincia": "SAN JUAN",
+    "bloque": "JUSTICIALISTA",
+    "ceseAnio": 2029
+  },
+  {
+    "apellido": "VALENZUELA",
+    "nombre": "MERCEDES GABRIELA",
+    "provincia": "CORRIENTES",
+    "bloque": "UCR - UNIÓN CÍVICA RADICAL",
+    "ceseAnio": 2027
+  },
+  {
+    "apellido": "VIGO",
+    "nombre": "ALEJANDRA MARÍA",
+    "provincia": "CORDOBA",
+    "bloque": "PROVINCIAS UNIDAS",
+    "ceseAnio": 2027
+  },
+  {
+    "apellido": "VISCHI",
+    "nombre": "EDUARDO ALEJANDRO",
+    "provincia": "CORRIENTES",
+    "bloque": "UCR - UNIÓN CÍVICA RADICAL",
+    "ceseAnio": 2027
+  },
+  {
+    "apellido": "ZAMORA",
+    "nombre": "GERARDO",
+    "provincia": "SANTIAGO DEL ESTERO",
+    "bloque": "FRENTE CÍVICO POR SANTIAGO",
+    "ceseAnio": 2031
+  }
+]

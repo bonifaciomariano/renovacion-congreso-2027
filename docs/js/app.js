@@ -58,16 +58,53 @@ function colorForBloque(bloque) {
 }
 
 // ---------------------------------------------------------------------
+// Helpers de agrupación
+// ---------------------------------------------------------------------
+function groupByProvincia(rows) {
+  const map = new Map();
+  rows.forEach((row) => {
+    const key = canonProvinciaFromData(row.provincia);
+    if (!map.has(key)) map.set(key, []);
+    map.get(key).push(row);
+  });
+  return map;
+}
+
+function countByProvincia(rows) {
+  const map = new Map();
+  rows.forEach((row) => {
+    const key = canonProvinciaFromData(row.provincia);
+    map.set(key, (map.get(key) || 0) + 1);
+  });
+  return map;
+}
+
+function uniqueBloques(rows) {
+  return Array.from(new Set(rows.map((r) => r.bloque))).sort((a, b) =>
+    a.localeCompare(b, "es")
+  );
+}
+
+// ---------------------------------------------------------------------
 // Estado global
 // ---------------------------------------------------------------------
 const state = {
   chamber: "senado", // 'senado' | 'diputados'
-  bloqueFiltro: "",  // '' = sin filtro (solo aplica a diputados)
-  diputadosByProv: new Map(),
-  senadoresByProv: new Map(),
+  bloqueFiltro: "",  // '' = sin filtro
+
+  diputadosTodos: [],
+  senadoresTodos: [],
+
+  diputados2027ByProv: new Map(),   // provincia -> filas que renuevan en 2027
+  diputadosVigentesPorProv: new Map(), // provincia -> cantidad que NO renueva (mandato hasta 2029)
+  senadores2027ByProv: new Map(),   // provincia -> filas que renuevan en 2027
+  senadoresCeseAnioPorProv: new Map(), // provincia (no renueva en 2027) -> año de cese
+
+  bloquesDiputados: [],
+  bloquesSenado: [],
+
   desdoblamientoByProv: new Map(),
   displayNameByProv: new Map(), // clave canónica -> nombre bonito (del geojson)
-  bloques: [],
   geoLayer: null,
   provinciasConDiputados: new Set(),
   provinciasConSenadores: new Set(),
@@ -111,11 +148,14 @@ function formatFecha(iso) {
 // ---------------------------------------------------------------------
 async function loadData() {
   const [diputados, senadores, desdoblamiento, geojson] = await Promise.all([
-    fetch("data/diputados_2027.json").then((r) => r.json()),
-    fetch("data/senadores_2027.json").then((r) => r.json()),
+    fetch("data/diputados_todos.json").then((r) => r.json()),
+    fetch("data/senadores_todos.json").then((r) => r.json()),
     fetch("data/desdoblamiento_2027.json").then((r) => r.json()),
     fetch("data/provincias.geojson").then((r) => r.json()),
   ]);
+
+  state.diputadosTodos = diputados;
+  state.senadoresTodos = senadores;
 
   // Nombres de exhibición: uno por clave canónica, tomado del geojson.
   geojson.features.forEach((f) => {
@@ -123,18 +163,22 @@ async function loadData() {
     state.displayNameByProv.set(key, f.properties.nombre);
   });
 
-  diputados.forEach((row) => {
-    const key = canonProvinciaFromData(row.provincia);
-    if (!state.diputadosByProv.has(key)) state.diputadosByProv.set(key, []);
-    state.diputadosByProv.get(key).push(row);
-    state.provinciasConDiputados.add(key);
-  });
+  const diputados2027 = diputados.filter((d) => d.finalizaAnio === 2027);
+  const diputadosVigentes = diputados.filter((d) => d.finalizaAnio !== 2027);
+  state.diputados2027ByProv = groupByProvincia(diputados2027);
+  state.diputadosVigentesPorProv = countByProvincia(diputadosVigentes);
+  state.provinciasConDiputados = new Set(state.diputados2027ByProv.keys());
+  state.bloquesDiputados = uniqueBloques(diputados2027);
 
-  senadores.forEach((row) => {
-    const key = canonProvinciaFromData(row.provincia);
-    if (!state.senadoresByProv.has(key)) state.senadoresByProv.set(key, []);
-    state.senadoresByProv.get(key).push(row);
-    state.provinciasConSenadores.add(key);
+  const senadores2027 = senadores.filter((s) => s.ceseAnio === 2027);
+  const senadoresNo2027 = senadores.filter((s) => s.ceseAnio !== 2027);
+  state.senadores2027ByProv = groupByProvincia(senadores2027);
+  state.provinciasConSenadores = new Set(state.senadores2027ByProv.keys());
+  state.bloquesSenado = uniqueBloques(senadores2027);
+
+  senadoresNo2027.forEach((s) => {
+    const key = canonProvinciaFromData(s.provincia);
+    state.senadoresCeseAnioPorProv.set(key, s.ceseAnio);
   });
 
   desdoblamiento.forEach((row) => {
@@ -142,19 +186,19 @@ async function loadData() {
     state.desdoblamientoByProv.set(key, row);
   });
 
-  state.bloques = Array.from(new Set(diputados.map((d) => d.bloque))).sort(
-    (a, b) => a.localeCompare(b, "es")
-  );
-
   return geojson;
 }
 
 // ---------------------------------------------------------------------
 // Coropleta
 // ---------------------------------------------------------------------
+function currentByProv() {
+  return state.chamber === "senado" ? state.senadores2027ByProv : state.diputados2027ByProv;
+}
+
 function maxCountForBloque(bloque) {
   let max = 0;
-  state.diputadosByProv.forEach((rows) => {
+  currentByProv().forEach((rows) => {
     const n = rows.filter((r) => r.bloque === bloque).length;
     if (n > max) max = n;
   });
@@ -183,21 +227,19 @@ function styleForProvince(provKey) {
     fillOpacity: 0.92,
   };
 
-  if (state.chamber === "senado") {
-    const renueva = state.provinciasConSenadores.has(provKey);
-    return Object.assign(base, {
-      fillColor: renueva ? "#005ca9" : "#e7edf3",
-      color: renueva ? "#ffffff" : "#c7c7c9",
-      fillOpacity: renueva ? 0.92 : 0.55,
-    });
-  }
-
-  // Diputados
   if (!state.bloqueFiltro) {
+    if (state.chamber === "senado") {
+      const renueva = state.provinciasConSenadores.has(provKey);
+      return Object.assign(base, {
+        fillColor: renueva ? "#005ca9" : "#e7edf3",
+        color: renueva ? "#ffffff" : "#c7c7c9",
+        fillOpacity: renueva ? 0.92 : 0.55,
+      });
+    }
     return Object.assign(base, { fillColor: "#5f9dc9", fillOpacity: 0.85 });
   }
 
-  const rows = state.diputadosByProv.get(provKey) || [];
+  const rows = currentByProv().get(provKey) || [];
   const n = rows.filter((r) => r.bloque === state.bloqueFiltro).length;
   const max = maxCountForBloque(state.bloqueFiltro) || 1;
   if (n === 0) {
@@ -212,12 +254,8 @@ function styleForProvince(provKey) {
 // ---------------------------------------------------------------------
 let map;
 
-// Bounds del territorio continental + Tierra del Fuego. La geometría de
-// "Tierra del Fuego, Antártida e Islas del Atlántico Sur" en el geojson de
-// Georef incluye el reclamo antártico (hasta -90° de latitud); si se usara
-// layer.getBounds() el mapa se encuadraría para abarcar la Antártida y las
-// provincias continentales quedarían reducidas a un punto. Se fija un bbox
-// razonable en su lugar.
+// Bounds del territorio continental + Tierra del Fuego (el reclamo antártico
+// ya se removió de la geometría en build_data.py).
 const ARGENTINA_BOUNDS = L.latLngBounds([
   [-55.5, -73.6],
   [-21.6, -53.5],
@@ -263,10 +301,6 @@ function initMap(geojson) {
     map.fitBounds(ARGENTINA_BOUNDS, { padding: [14, 14] });
   };
   fitToArgentina();
-  // Red de seguridad: el contenedor puede no tener su tamaño final en el
-  // momento exacto en que se crea el mapa (fuentes/CSS todavía asentándose),
-  // así que se reintenta unas cuantas veces durante el primer segundo y,
-  // sobre todo, en cuanto el navegador confirme que el tamaño cambió.
   [100, 300, 700, 1200].forEach((ms) => setTimeout(fitToArgentina, ms));
   window.addEventListener("load", fitToArgentina);
   document.addEventListener("visibilitychange", () => {
@@ -282,17 +316,28 @@ function initMap(geojson) {
 
 function tooltipHTML(provKey) {
   const name = state.displayNameByProv.get(provKey) || provKey;
-  const count =
-    state.chamber === "senado"
-      ? (state.senadoresByProv.get(provKey) || []).length
-      : (state.diputadosByProv.get(provKey) || []).length;
-  const camaraLabel = state.chamber === "senado" ? "senador" : "diputado";
-  const camaraLabelPlural = state.chamber === "senado" ? "senadores" : "diputados";
-  const countTxt =
-    count === 0
-      ? `Sin bancas de ${state.chamber === "senado" ? "Senado" : "Diputados"} en 2027`
-      : `${count} ${count === 1 ? camaraLabel : camaraLabelPlural} renuevan en 2027`;
-  return `<div class="province-tooltip"><strong>${name}</strong>${countTxt}<div class="tt-badge">${badgeHTML(provKey)}</div></div>`;
+  let bodyHTML;
+
+  if (state.chamber === "senado") {
+    const rows = state.senadores2027ByProv.get(provKey) || [];
+    if (rows.length > 0) {
+      bodyHTML = `${rows.length} ${rows.length === 1 ? "senador" : "senadores"} renuevan en 2027`;
+    } else {
+      const anio = state.senadoresCeseAnioPorProv.get(provKey);
+      bodyHTML = anio
+        ? `No renueva en 2027 — mandato vigente hasta ${anio}`
+        : "No renueva en 2027";
+    }
+  } else {
+    const renuevan = (state.diputados2027ByProv.get(provKey) || []).length;
+    const vigentes = state.diputadosVigentesPorProv.get(provKey) || 0;
+    const partes = [];
+    partes.push(`${renuevan} ${renuevan === 1 ? "diputado renueva" : "diputados renuevan"} en 2027`);
+    partes.push(`${vigentes} ${vigentes === 1 ? "continúa" : "continúan"} con mandato vigente`);
+    bodyHTML = partes.join("<br>");
+  }
+
+  return `<div class="province-tooltip"><strong>${name}</strong>${bodyHTML}<div class="tt-badge">${badgeHTML(provKey)}</div></div>`;
 }
 
 function refreshMapStyles() {
@@ -310,7 +355,7 @@ function refreshMapStyles() {
 }
 
 // ---------------------------------------------------------------------
-// Panel lateral
+// Panel lateral (detalle de una provincia)
 // ---------------------------------------------------------------------
 const panelEl = document.getElementById("panel");
 const panelOverlayEl = document.getElementById("panelOverlay");
@@ -323,8 +368,8 @@ function openPanel(provKey) {
   const name = state.displayNameByProv.get(provKey) || provKey;
   const rows =
     state.chamber === "senado"
-      ? state.senadoresByProv.get(provKey) || []
-      : state.diputadosByProv.get(provKey) || [];
+      ? state.senadores2027ByProv.get(provKey) || []
+      : state.diputados2027ByProv.get(provKey) || [];
 
   panelTitleEl.textContent = name;
   panelBadgeEl.innerHTML = badgeHTML(provKey);
@@ -373,21 +418,20 @@ document.getElementById("panelClose").addEventListener("click", closePanel);
 panelOverlayEl.addEventListener("click", closePanel);
 
 // ---------------------------------------------------------------------
-// Leyenda
+// Leyenda del mapa (coropleta / senado)
 // ---------------------------------------------------------------------
 const legendEl = document.getElementById("legend");
 
 function renderLegend() {
-  if (state.chamber === "senado") {
-    legendEl.innerHTML = `
-      <h3>Senado 2027</h3>
-      <div class="legend-row"><span class="legend-swatch" style="background:#005ca9"></span>Provincia renueva (3 bancas)</div>
-      <div class="legend-row"><span class="legend-swatch" style="background:#e7edf3;border-color:#c7c7c9"></span>No renueva en 2027</div>
-    `;
-    return;
-  }
-
   if (!state.bloqueFiltro) {
+    if (state.chamber === "senado") {
+      legendEl.innerHTML = `
+        <h3>Senado 2027</h3>
+        <div class="legend-row"><span class="legend-swatch" style="background:#005ca9"></span>Provincia renueva (3 bancas)</div>
+        <div class="legend-row"><span class="legend-swatch" style="background:#e7edf3;border-color:#c7c7c9"></span>No renueva en 2027</div>
+      `;
+      return;
+    }
     legendEl.innerHTML = `
       <h3>Diputados 2027</h3>
       <div class="legend-row"><span class="legend-swatch" style="background:#5f9dc9"></span>Provincia con bancas que renuevan</div>
@@ -414,26 +458,100 @@ function escapeHTML(s) {
 }
 
 // ---------------------------------------------------------------------
+// Resumen de bloque (al costado del mapa, cuando hay un bloque filtrado)
+// ---------------------------------------------------------------------
+const bloqueSummaryEl = document.getElementById("bloqueSummary");
+const summaryNameEl = document.getElementById("summaryBloqueName");
+const summaryActualesEl = document.getElementById("summaryActuales");
+const summaryEnJuegoEl = document.getElementById("summaryEnJuego");
+const summaryProvListEl = document.getElementById("summaryProvList");
+
+function renderBloqueSummary() {
+  if (!state.bloqueFiltro) {
+    bloqueSummaryEl.hidden = true;
+    return;
+  }
+
+  const todos = state.chamber === "senado" ? state.senadoresTodos : state.diputadosTodos;
+  const anioKey = state.chamber === "senado" ? "ceseAnio" : "finalizaAnio";
+  const bloque = state.bloqueFiltro;
+
+  const actuales = todos.filter((r) => r.bloque === bloque).length;
+  const enJuego = todos.filter((r) => r.bloque === bloque && r[anioKey] === 2027).length;
+
+  const porProvincia = new Map();
+  currentByProv().forEach((rows, provKey) => {
+    const n = rows.filter((r) => r.bloque === bloque).length;
+    if (n > 0) porProvincia.set(provKey, n);
+  });
+  const provinciasOrdenadas = Array.from(porProvincia.entries()).sort((a, b) => {
+    if (b[1] !== a[1]) return b[1] - a[1];
+    const nameA = state.displayNameByProv.get(a[0]) || a[0];
+    const nameB = state.displayNameByProv.get(b[0]) || b[0];
+    return nameA.localeCompare(nameB, "es");
+  });
+
+  summaryNameEl.textContent = bloque;
+  summaryActualesEl.textContent = actuales;
+  summaryEnJuegoEl.textContent = enJuego;
+
+  summaryProvListEl.innerHTML = "";
+  if (provinciasOrdenadas.length === 0) {
+    const li = document.createElement("li");
+    li.className = "summary-empty";
+    li.textContent = "Sin bancas en juego en 2027.";
+    summaryProvListEl.appendChild(li);
+  } else {
+    provinciasOrdenadas.forEach(([provKey, n]) => {
+      const li = document.createElement("li");
+      const name = document.createElement("span");
+      name.textContent = state.displayNameByProv.get(provKey) || provKey;
+      const count = document.createElement("span");
+      count.className = "summary-prov-count";
+      count.textContent = n;
+      li.appendChild(name);
+      li.appendChild(count);
+      summaryProvListEl.appendChild(li);
+    });
+  }
+
+  bloqueSummaryEl.hidden = false;
+}
+
+// ---------------------------------------------------------------------
 // Controles
 // ---------------------------------------------------------------------
-const bloqueFilterWrap = document.getElementById("bloqueFilterWrap");
 const bloqueSelect = document.getElementById("bloqueSelect");
 const controlsHint = document.getElementById("controlsHint");
 
+function populateBloqueSelect() {
+  const bloques = state.chamber === "senado" ? state.bloquesSenado : state.bloquesDiputados;
+  bloqueSelect.innerHTML = '<option value="">Todos los bloques (sin coropleta)</option>';
+  bloques.forEach((b) => {
+    const opt = document.createElement("option");
+    opt.value = b;
+    opt.textContent = b;
+    bloqueSelect.appendChild(opt);
+  });
+  bloqueSelect.value = "";
+}
+
 function setChamber(chamber) {
   state.chamber = chamber;
+  state.bloqueFiltro = "";
   document.querySelectorAll(".chamber-btn").forEach((btn) => {
     const active = btn.dataset.chamber === chamber;
     btn.classList.toggle("active", active);
     btn.setAttribute("aria-selected", String(active));
   });
-  bloqueFilterWrap.hidden = chamber !== "diputados";
+  populateBloqueSelect();
   controlsHint.textContent =
     chamber === "senado"
       ? "8 provincias renuevan un tercio del Senado en 2027 (24 bancas en total)."
-      : "Las 24 provincias renuevan diputados en 2027. Filtrá por bloque para ver la coropleta.";
+      : "Las 24 provincias renuevan diputados en 2027.";
   refreshMapStyles();
   renderLegend();
+  renderBloqueSummary();
   closePanel();
 }
 
@@ -445,23 +563,14 @@ bloqueSelect.addEventListener("change", () => {
   state.bloqueFiltro = bloqueSelect.value;
   refreshMapStyles();
   renderLegend();
+  renderBloqueSummary();
 });
-
-function populateBloqueSelect() {
-  state.bloques.forEach((b) => {
-    const opt = document.createElement("option");
-    opt.value = b;
-    opt.textContent = b;
-    bloqueSelect.appendChild(opt);
-  });
-}
 
 // ---------------------------------------------------------------------
 // Init
 // ---------------------------------------------------------------------
 (async function init() {
   const geojson = await loadData();
-  populateBloqueSelect();
   initMap(geojson);
   setChamber("senado");
 })();

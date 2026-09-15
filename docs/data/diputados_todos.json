@@ -1,0 +1,1801 @@
+[
+  {
+    "apellido": "Aguirre",
+    "nombre": "Hilda",
+    "provincia": "LA RIOJA",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Agüero",
+    "nombre": "Guillermo César",
+    "provincia": "CHACO",
+    "bloque": "UCR - UNIÓN CÍVICA RADICAL",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Ajmechet",
+    "nombre": "Sabrina",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Alí",
+    "nombre": "Ernesto Pipi\"\"",
+    "provincia": "SAN LUIS",
+    "bloque": "PRIMERO SAN LUIS",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Almena",
+    "nombre": "Carlos Alberto",
+    "provincia": "SAN LUIS",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Almirón",
+    "nombre": "Lisandro",
+    "provincia": "CORRIENTES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Álvarez",
+    "nombre": "Claudio",
+    "provincia": "SAN LUIS",
+    "bloque": "ARGENTINA FEDERAL",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Andino",
+    "nombre": "Cristian",
+    "provincia": "SAN JUAN",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Andrade",
+    "nombre": "Javier",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Andreussi",
+    "nombre": "Barbara",
+    "provincia": "JUJUY",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Ansaloni",
+    "nombre": "Pablo",
+    "provincia": "BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Arabia",
+    "nombre": "Damián",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Araujo Hernández",
+    "nombre": "Jorge Neri",
+    "provincia": "TIERRA DEL FUEGO",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Ardohain",
+    "nombre": "Martín",
+    "provincia": "LA PAMPA",
+    "bloque": "PRO",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Arrieta",
+    "nombre": "Lourdes Micaela",
+    "provincia": "MENDOZA",
+    "bloque": "PROVINCIAS UNIDAS",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Arrúa",
+    "nombre": "Alberto",
+    "provincia": "MISIONES",
+    "bloque": "ARGENTINA FEDERAL",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Aveiro",
+    "nombre": "Martín",
+    "provincia": "MENDOZA",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Avico",
+    "nombre": "Belén",
+    "provincia": "CORDOBA",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Avila",
+    "nombre": "Jorge Antonio",
+    "provincia": "CHUBUT",
+    "bloque": "PROVINCIAS UNIDAS",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Avila",
+    "nombre": "Fernanda",
+    "provincia": "CATAMARCA",
+    "bloque": "ELIJO CATAMARCA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Banfi",
+    "nombre": "Karina",
+    "provincia": "BUENOS AIRES",
+    "bloque": "ADELANTE BUENOS AIRES",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Barbur",
+    "nombre": "Marcelo",
+    "provincia": "SANTIAGO DEL ESTERO",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Basterra",
+    "nombre": "Luis Eugenio",
+    "provincia": "FORMOSA",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Basualdo",
+    "nombre": "Atilio",
+    "provincia": "FORMOSA",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Basualdo",
+    "nombre": "Carolina",
+    "provincia": "CORDOBA",
+    "bloque": "PROVINCIAS UNIDAS",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Becerra",
+    "nombre": "Mónica",
+    "provincia": "SAN LUIS",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Benedit",
+    "nombre": "Beltrán",
+    "provincia": "ENTRE RIOS",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Benegas Lynch",
+    "nombre": "Bertie",
+    "provincia": "BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Bianchetti",
+    "nombre": "Emmanuel",
+    "provincia": "MISIONES",
+    "bloque": "PRO",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Biella",
+    "nombre": "Bernardo",
+    "provincia": "SALTA",
+    "bloque": "ARGENTINA FEDERAL",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Bonacci",
+    "nombre": "Rocío",
+    "provincia": "SANTA FE",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Bongiovanni",
+    "nombre": "Alejandro",
+    "provincia": "SANTA FE",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Bordet",
+    "nombre": "Gustavo",
+    "provincia": "ENTRE RIOS",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Borgatta",
+    "nombre": "Alejandrina",
+    "provincia": "SANTA FE",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Bornoroni",
+    "nombre": "Gabriel",
+    "provincia": "CORDOBA",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Bregman",
+    "nombre": "Myriam",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "PTS-FRENTE DE IZQUIERDA Y DE TRABAJADORES UNIDAD",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Brizuela",
+    "nombre": "Adrián",
+    "provincia": "CATAMARCA",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Bruno",
+    "nombre": "Eliana",
+    "provincia": "SALTA",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Brügge",
+    "nombre": "Juan Fernando",
+    "provincia": "CORDOBA",
+    "bloque": "PROVINCIAS UNIDAS",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Cafiero",
+    "nombre": "Santiago",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Campero",
+    "nombre": "Mariano",
+    "provincia": "TUCUMAN",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Campitelli",
+    "nombre": "Celia",
+    "provincia": "SANTIAGO DEL ESTERO",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Campo",
+    "nombre": "Julieta Marisol",
+    "provincia": "CHACO",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Cámpora",
+    "nombre": "Lucía",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Capozzi",
+    "nombre": "Sergio Eduardo",
+    "provincia": "RIO NEGRO",
+    "bloque": "PROVINCIAS UNIDAS",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Carignano",
+    "nombre": "Florencia",
+    "provincia": "SANTA FE",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Carrancio",
+    "nombre": "Alejandro",
+    "provincia": "BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Casas",
+    "nombre": "Sergio Guillermo",
+    "provincia": "LA RIOJA",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Castagneto",
+    "nombre": "Carlos Daniel",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Castelnuovo",
+    "nombre": "Giselle",
+    "provincia": "BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Chica",
+    "nombre": "Jorge",
+    "provincia": "SAN JUAN",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Chiconi",
+    "nombre": "Abel",
+    "provincia": "SAN JUAN",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Cipolini",
+    "nombre": "Gerardo",
+    "provincia": "CHACO",
+    "bloque": "UCR - UNIÓN CÍVICA RADICAL",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Cisneros",
+    "nombre": "Carlos",
+    "provincia": "TUCUMAN",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Coletta",
+    "nombre": "Mariela",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "PROVINCIAS UNIDAS",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Correa Llano",
+    "nombre": "Facundo",
+    "provincia": "MENDOZA",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Daives",
+    "nombre": "Ricardo",
+    "provincia": "SANTIAGO DEL ESTERO",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "de Andreis",
+    "nombre": "Fernando",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "PRO",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "de la Rosa",
+    "nombre": "María Graciela",
+    "provincia": "FORMOSA",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "de la Sota",
+    "nombre": "Natalia",
+    "provincia": "CORDOBA",
+    "bloque": "DEFENDAMOS CÓRDOBA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "De Sensi",
+    "nombre": "María Florencia",
+    "provincia": "BUENOS AIRES",
+    "bloque": "PRO",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "del Caño",
+    "nombre": "Nicolás",
+    "provincia": "BUENOS AIRES",
+    "bloque": "PTS-FRENTE DE IZQUIERDA Y DE TRABAJADORES UNIDAD",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Del Plá",
+    "nombre": "Romina",
+    "provincia": "BUENOS AIRES",
+    "bloque": "PARTIDO OBRERO EN EL FRENTE DE IZQUIERDA Y DE TRABAJADORES-UNIDAD",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Díaz",
+    "nombre": "Fernanda",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Diez",
+    "nombre": "Romina",
+    "provincia": "SANTA FE",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Dolce",
+    "nombre": "Sergio",
+    "provincia": "CHACO",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Emma",
+    "nombre": "Nicolás",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Estévez",
+    "nombre": "Gabriela Beatriz",
+    "provincia": "CORDOBA",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Falcone",
+    "nombre": "Eduardo",
+    "provincia": "BUENOS AIRES",
+    "bloque": "MID - MOVIMIENTO DE INTEGRACIÓN Y DESARROLLO",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Fargosi",
+    "nombre": "Alejandro",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Farías",
+    "nombre": "Pablo",
+    "provincia": "SANTA FE",
+    "bloque": "PROVINCIAS UNIDAS",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Félix",
+    "nombre": "Emir",
+    "provincia": "MENDOZA",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Fernández",
+    "nombre": "Jorge",
+    "provincia": "SAN LUIS",
+    "bloque": "PRIMERO SAN LUIS",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Fernández",
+    "nombre": "Elia Marina",
+    "provincia": "TUCUMAN",
+    "bloque": "INDEPENDENCIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Fernández Molero",
+    "nombre": "Daiana",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "PRO",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Ferrán",
+    "nombre": "Abelardo",
+    "provincia": "LA PAMPA",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Ferraro",
+    "nombre": "Maximiliano",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "COALICION CIVICA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Ferreyra",
+    "nombre": "Alida",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Figliuolo",
+    "nombre": "Sergio",
+    "provincia": "BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Finocchiaro",
+    "nombre": "Alejandro",
+    "provincia": "BUENOS AIRES",
+    "bloque": "PRO",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Flores",
+    "nombre": "Maria Gabriela",
+    "provincia": "SALTA",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Frade",
+    "nombre": "Mónica",
+    "provincia": "BUENOS AIRES",
+    "bloque": "COALICION CIVICA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Fregonese",
+    "nombre": "Alicia",
+    "provincia": "ENTRE RIOS",
+    "bloque": "PRO",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Freites",
+    "nombre": "Andrea",
+    "provincia": "TIERRA DEL FUEGO",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Frias",
+    "nombre": "Maira",
+    "provincia": "CHUBUT",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Gallardo",
+    "nombre": "María Virginia",
+    "provincia": "CORRIENTES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Galmarini",
+    "nombre": "Sebastián",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "García",
+    "nombre": "Carlos",
+    "provincia": "CHACO",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "García",
+    "nombre": "María Teresa",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "García",
+    "nombre": "Álvaro",
+    "provincia": "BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "García Aresca",
+    "nombre": "Ignacio",
+    "provincia": "CORDOBA",
+    "bloque": "PROVINCIAS UNIDAS",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Garrido",
+    "nombre": "José Luis",
+    "provincia": "SANTA CRUZ",
+    "bloque": "POR SANTA CRUZ",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Giampieri",
+    "nombre": "Antonela",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "PRO",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Giordano",
+    "nombre": "Juan Carlos",
+    "provincia": "BUENOS AIRES",
+    "bloque": "IZQUIERDA SOCIALISTA - FRENTE DE IZQUIERDA UNIDAD",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Giudici",
+    "nombre": "Silvana",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Giuliano",
+    "nombre": "Diego A.",
+    "provincia": "SANTA FE",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Glinski",
+    "nombre": "José",
+    "provincia": "CHUBUT",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Goitia",
+    "nombre": "Rosario",
+    "provincia": "CHACO",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Gomez",
+    "nombre": "José",
+    "provincia": "SANTIAGO DEL ESTERO",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Gonzales",
+    "nombre": "Alfredo",
+    "provincia": "JUJUY",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "González",
+    "nombre": "Gerardo Gustavo",
+    "provincia": "FORMOSA",
+    "bloque": "ARGENTINA FEDERAL",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "González",
+    "nombre": "Diógenes Ignacio",
+    "provincia": "CORRIENTES",
+    "bloque": "UCR - UNIÓN CÍVICA RADICAL",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "González",
+    "nombre": "Álvaro",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "PRO",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "González Estevarena",
+    "nombre": "María Luisa",
+    "provincia": "BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Grabois",
+    "nombre": "Juan",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Gruber",
+    "nombre": "Maura",
+    "provincia": "MISIONES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Gutiérrez",
+    "nombre": "Ramiro",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Gutiérrez",
+    "nombre": "Carlos",
+    "provincia": "CORDOBA",
+    "bloque": "PROVINCIAS UNIDAS",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Guzmán",
+    "nombre": "Jairo",
+    "provincia": "SANTA CRUZ",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Hadad",
+    "nombre": "Raúl",
+    "provincia": "CORRIENTES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Hagman",
+    "nombre": "Itai",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Hartfield",
+    "nombre": "Diego",
+    "provincia": "MISIONES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Herrera Ahuad",
+    "nombre": "Oscar A.",
+    "provincia": "MISIONES",
+    "bloque": "ARGENTINA FEDERAL",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Holzman",
+    "nombre": "Patricia",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Huesen",
+    "nombre": "Gerardo",
+    "provincia": "TUCUMAN",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Humenuk",
+    "nombre": "Gladys",
+    "provincia": "BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Ianni",
+    "nombre": "Ana María",
+    "provincia": "SANTA CRUZ",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Ibañez",
+    "nombre": "María Cecilia",
+    "provincia": "CORDOBA",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Jaime Quiroga",
+    "nombre": "Carlos Gustavo",
+    "provincia": "SAN JUAN",
+    "bloque": "PRODUCCION Y TRABAJO",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Juliano",
+    "nombre": "Pablo",
+    "provincia": "BUENOS AIRES",
+    "bloque": "PROVINCIAS UNIDAS",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Kirchner",
+    "nombre": "Máximo Carlos",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Lanesan Sancho",
+    "nombre": "Moira",
+    "provincia": "SANTA CRUZ",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Laumann",
+    "nombre": "Andrés Ariel",
+    "provincia": "ENTRE RIOS",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Leiva",
+    "nombre": "Aldo",
+    "provincia": "CHACO",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Lemoine",
+    "nombre": "Lilia",
+    "provincia": "BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Leone",
+    "nombre": "Andrés",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Llano",
+    "nombre": "Mercedes",
+    "provincia": "MENDOZA",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Lluch",
+    "nombre": "Enrique",
+    "provincia": "CORDOBA",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Longo",
+    "nombre": "Johanna Sabrina",
+    "provincia": "BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "López",
+    "nombre": "Jimena",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "López Pasquali",
+    "nombre": "Cecilia",
+    "provincia": "SANTIAGO DEL ESTERO",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Lousteau",
+    "nombre": "Martín",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "PROVINCIAS UNIDAS",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Luque",
+    "nombre": "Juan Pablo",
+    "provincia": "CHUBUT",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Macyszyn",
+    "nombre": "Lorena",
+    "provincia": "BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Mango",
+    "nombre": "Marcelo",
+    "provincia": "RIO NEGRO",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Manrique",
+    "nombre": "Mario",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Marclay",
+    "nombre": "Marianela",
+    "provincia": "ENTRE RIOS",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Marín",
+    "nombre": "Varinia Lis",
+    "provincia": "LA PAMPA",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Marino",
+    "nombre": "Juan",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Martínez",
+    "nombre": "Germán Pedro",
+    "provincia": "SANTA FE",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Martínez",
+    "nombre": "Álvaro",
+    "provincia": "MENDOZA",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Massot",
+    "nombre": "Nicolás",
+    "provincia": "BUENOS AIRES",
+    "bloque": "ENCUENTRO FEDERAL",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Matzkin",
+    "nombre": "Martín",
+    "provincia": "LA PAMPA",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Maureira",
+    "nombre": "Karina",
+    "provincia": "NEUQUEN",
+    "bloque": "LA NEUQUINIDAD",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Mayoraz",
+    "nombre": "Nicolás",
+    "provincia": "SANTA FE",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Medina",
+    "nombre": "Gladys",
+    "provincia": "TUCUMAN",
+    "bloque": "INDEPENDENCIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Menem",
+    "nombre": "Martín",
+    "provincia": "LA RIOJA",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Metral Asensio",
+    "nombre": "Julieta",
+    "provincia": "MENDOZA",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Michel",
+    "nombre": "Guillermo",
+    "provincia": "ENTRE RIOS",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Miño",
+    "nombre": "Fernanda",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Molina",
+    "nombre": "Juan Carlos",
+    "provincia": "SANTA CRUZ",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Molinuevo",
+    "nombre": "Soledad",
+    "provincia": "TUCUMAN",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Molle",
+    "nombre": "Matías",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Mondaca",
+    "nombre": "Soledad",
+    "provincia": "NEUQUEN",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Monguillot",
+    "nombre": "Fernando",
+    "provincia": "CATAMARCA",
+    "bloque": "ELIJO CATAMARCA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Montenegro",
+    "nombre": "Juan Pablo",
+    "provincia": "SANTA FE",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Montenegro",
+    "nombre": "Guillermo",
+    "provincia": "BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Monzón",
+    "nombre": "Roxana",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Morchio",
+    "nombre": "Francisco",
+    "provincia": "ENTRE RIOS",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Moreau",
+    "nombre": "Cecilia",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Moreno Ovalle",
+    "nombre": "Julio",
+    "provincia": "SALTA",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Moyano",
+    "nombre": "Hugo Antonio",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Mukdise",
+    "nombre": "Jorge",
+    "provincia": "SANTIAGO DEL ESTERO",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Muñoz",
+    "nombre": "Gabriela Luciana",
+    "provincia": "NEUQUEN",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Neder",
+    "nombre": "Estela Mary",
+    "provincia": "SANTIAGO DEL ESTERO",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Nieri",
+    "nombre": "Lisandro",
+    "provincia": "MENDOZA",
+    "bloque": "UCR - UNIÓN CÍVICA RADICAL",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Niveyro",
+    "nombre": "Miriam",
+    "provincia": "BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Nóblega",
+    "nombre": "Sebastián",
+    "provincia": "CATAMARCA",
+    "bloque": "ELIJO CATAMARCA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Noguera",
+    "nombre": "Javier",
+    "provincia": "TUCUMAN",
+    "bloque": "INDEPENDENCIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Nuñez",
+    "nombre": "José",
+    "provincia": "SANTA FE",
+    "bloque": "PROVINCIAS UNIDAS",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Ojeda",
+    "nombre": "Joaquín",
+    "provincia": "BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Olmos",
+    "nombre": "Kelly",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Osuna",
+    "nombre": "Blanca Inés",
+    "provincia": "ENTRE RIOS",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Outes",
+    "nombre": "Pablo",
+    "provincia": "SALTA",
+    "bloque": "ARGENTINA FEDERAL",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Pagano",
+    "nombre": "Marcela Marina",
+    "provincia": "BUENOS AIRES",
+    "bloque": "COHERENCIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Palazzo",
+    "nombre": "Sergio Omar",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Palladino",
+    "nombre": "Claudia María",
+    "provincia": "CATAMARCA",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Pareja",
+    "nombre": "Sebastián",
+    "provincia": "BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Parola",
+    "nombre": "María Graciela",
+    "provincia": "FORMOSA",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Patiño Brizuela",
+    "nombre": "Marcos",
+    "provincia": "CORDOBA",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Pauli",
+    "nombre": "Santiago",
+    "provincia": "TIERRA DEL FUEGO",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Paulón",
+    "nombre": "Esteban",
+    "provincia": "SANTA FE",
+    "bloque": "PROVINCIAS UNIDAS",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Pedrali",
+    "nombre": "Gabriela",
+    "provincia": "LA RIOJA",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Pellegrini",
+    "nombre": "Agustín",
+    "provincia": "SANTA FE",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Pelli",
+    "nombre": "Federico Agustín",
+    "provincia": "TUCUMAN",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Peluc",
+    "nombre": "José",
+    "provincia": "SAN JUAN",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Penacca",
+    "nombre": "Paula Andrea",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Petri",
+    "nombre": "Luis",
+    "provincia": "MENDOZA",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Petrovich",
+    "nombre": "María Lorena",
+    "provincia": "BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Picat",
+    "nombre": "Luis Albino",
+    "provincia": "CORDOBA",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Pichetto",
+    "nombre": "Miguel Ángel",
+    "provincia": "BUENOS AIRES",
+    "bloque": "ENCUENTRO FEDERAL",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Picón Martínez",
+    "nombre": "Nancy Viviana",
+    "provincia": "SAN JUAN",
+    "bloque": "PRODUCCION Y TRABAJO",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Pietragalla Corti",
+    "nombre": "Horacio",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Pokoik",
+    "nombre": "Lorena",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Ponce",
+    "nombre": "María Celeste",
+    "provincia": "CORDOBA",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Potenza",
+    "nombre": "Luciana",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Propato",
+    "nombre": "Agustina Lucrecia",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Quintar",
+    "nombre": "Manuel",
+    "provincia": "JUJUY",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Rauschenberger",
+    "nombre": "Ariel",
+    "provincia": "LA PAMPA",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Ravera",
+    "nombre": "Valentina",
+    "provincia": "SANTA FE",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Razzini",
+    "nombre": "Verónica",
+    "provincia": "SANTA FE",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Reichardt",
+    "nombre": "Karen",
+    "provincia": "BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Riesco",
+    "nombre": "Gastón",
+    "provincia": "NEUQUEN",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Ritondo",
+    "nombre": "Cristian A.",
+    "provincia": "BUENOS AIRES",
+    "bloque": "PRO",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Rizzotti",
+    "nombre": "Jorge",
+    "provincia": "JUJUY",
+    "bloque": "PROVINCIAS UNIDAS",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Roberto",
+    "nombre": "Santiago Luis",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Roca",
+    "nombre": "Gonzalo",
+    "provincia": "CORDOBA",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Rodríguez",
+    "nombre": "Miguel",
+    "provincia": "TIERRA DEL FUEGO",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Rodríguez Machado",
+    "nombre": "Laura Elena",
+    "provincia": "CORDOBA",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Rossi",
+    "nombre": "Agustín Oscar",
+    "provincia": "SANTA FE",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Ruíz",
+    "nombre": "Yamila",
+    "provincia": "MISIONES",
+    "bloque": "ARGENTINA FEDERAL",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Salzmann",
+    "nombre": "Marina Dorotea",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Sánchez Wrba",
+    "nombre": "Javier",
+    "provincia": "BUENOS AIRES",
+    "bloque": "PRO",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Sand",
+    "nombre": "Nancy",
+    "provincia": "CORRIENTES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Santillán Juárez Brahim",
+    "nombre": "Juliana",
+    "provincia": "BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Santurio",
+    "nombre": "Santiago",
+    "provincia": "BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Scaglia",
+    "nombre": "Gisela",
+    "provincia": "SANTA FE",
+    "bloque": "PROVINCIAS UNIDAS",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Schiaretti",
+    "nombre": "Juan",
+    "provincia": "CORDOBA",
+    "bloque": "PROVINCIAS UNIDAS",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Schneider",
+    "nombre": "Darío",
+    "provincia": "ENTRE RIOS",
+    "bloque": "UCR - UNIÓN CÍVICA RADICAL",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Selva",
+    "nombre": "Sabrina",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Serquis",
+    "nombre": "Adriana Cristina",
+    "provincia": "RIO NEGRO",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Siley",
+    "nombre": "Vanesa Raquel",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Snopek",
+    "nombre": "Guillermo",
+    "provincia": "JUJUY",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Soldano",
+    "nombre": "Laura",
+    "provincia": "CORDOBA",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Strada",
+    "nombre": "Julia",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Taiana",
+    "nombre": "Jorge",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Tailhade",
+    "nombre": "Rodolfo",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Tepp",
+    "nombre": "Caren",
+    "provincia": "SANTA FE",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Tita",
+    "nombre": "Paulo Agustín",
+    "provincia": "TIERRA DEL FUEGO",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Todero",
+    "nombre": "Pablo",
+    "provincia": "NEUQUEN",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Tolosa Paz",
+    "nombre": "Victoria",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Tomassoni",
+    "nombre": "Yamile",
+    "provincia": "SANTA FE",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Torres",
+    "nombre": "Rubén Darío",
+    "provincia": "BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Torres",
+    "nombre": "Alejandra",
+    "provincia": "CORDOBA",
+    "bloque": "PROVINCIAS UNIDAS",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Tortoriello",
+    "nombre": "Aníbal",
+    "provincia": "RIO NEGRO",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Tournier",
+    "nombre": "José Federico",
+    "provincia": "CORRIENTES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Treffinger",
+    "nombre": "César",
+    "provincia": "CHUBUT",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Trotta",
+    "nombre": "Nicolás Alfredo",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Urien",
+    "nombre": "Hernán",
+    "provincia": "BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Valdés",
+    "nombre": "Eduardo Félix",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Vancsik",
+    "nombre": "Daniel",
+    "provincia": "MISIONES",
+    "bloque": "ARGENTINA FEDERAL",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Vásquez",
+    "nombre": "Patricia",
+    "provincia": "BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Vega",
+    "nombre": "Yolanda",
+    "provincia": "SALTA",
+    "bloque": "ARGENTINA FEDERAL",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Velázquez",
+    "nombre": "M. Elena",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Vera",
+    "nombre": "Andrea Fernanda",
+    "provincia": "BUENOS AIRES",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Verasay",
+    "nombre": "Pamela Fernanda",
+    "provincia": "MENDOZA",
+    "bloque": "UCR - UNIÓN CÍVICA RADICAL",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Villaverde",
+    "nombre": "Lorena",
+    "provincia": "RIO NEGRO",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Visconti",
+    "nombre": "Gino",
+    "provincia": "LA RIOJA",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Volnovich",
+    "nombre": "Luana",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Yasky",
+    "nombre": "Hugo",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Yedlin",
+    "nombre": "Pablo Raúl",
+    "provincia": "TUCUMAN",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Yeza",
+    "nombre": "Martín",
+    "provincia": "BUENOS AIRES",
+    "bloque": "PRO",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Zago",
+    "nombre": "Oscar",
+    "provincia": "CIUDAD AUTONOMA DE BUENOS AIRES",
+    "bloque": "MID - MOVIMIENTO DE INTEGRACIÓN Y DESARROLLO",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Zapata",
+    "nombre": "Carlos Raúl",
+    "provincia": "SALTA",
+    "bloque": "LA LIBERTAD AVANZA",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Zaracho",
+    "nombre": "Natalia",
+    "provincia": "BUENOS AIRES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  },
+  {
+    "apellido": "Zigarán",
+    "nombre": "María Inés",
+    "provincia": "JUJUY",
+    "bloque": "PROVINCIAS UNIDAS",
+    "finalizaAnio": 2029
+  },
+  {
+    "apellido": "Zulli",
+    "nombre": "Christian Alejandro",
+    "provincia": "CORRIENTES",
+    "bloque": "UNIÓN POR LA PATRIA",
+    "finalizaAnio": 2027
+  }
+]

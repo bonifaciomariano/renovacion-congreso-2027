@@ -32,7 +32,7 @@
       <button class="chamber-btn" data-chamber="diputados" role="tab" aria-selected="false">Diputados</button>
     </div>
 
-    <div class="bloque-filter" id="bloqueFilterWrap" hidden>
+    <div class="bloque-filter">
       <label for="bloqueSelect">Filtrar por bloque</label>
       <select id="bloqueSelect">
         <option value="">Todos los bloques (sin coropleta)</option>
@@ -42,10 +42,36 @@
     <p class="controls-hint" id="controlsHint"></p>
   </div>
 
-  <div class="map-wrap">
-    <div id="map" aria-label="Mapa de provincias argentinas"></div>
+  <div class="badge-legend">
+    <span class="badge-legend-label">Desdoblamiento electoral 2027</span>
+    <span class="badge badge-desdobla">Desdobla</span>
+    <span class="badge badge-no_desdobla">No desdobla</span>
+    <span class="badge badge-en_definicion">En definición</span>
+    <span class="badge badge-sin_dato">Sin dato</span>
+  </div>
 
-    <div class="legend" id="legend"></div>
+  <div class="map-row">
+    <div class="map-wrap">
+      <div id="map" aria-label="Mapa de provincias argentinas"></div>
+
+      <div class="legend" id="legend"></div>
+    </div>
+
+    <aside class="bloque-summary" id="bloqueSummary" hidden>
+      <h3 id="summaryBloqueName">Bloque</h3>
+      <div class="summary-stats">
+        <div class="summary-stat">
+          <span class="summary-stat-value" id="summaryActuales">0</span>
+          <span class="summary-stat-label">Bancas actuales</span>
+        </div>
+        <div class="summary-stat">
+          <span class="summary-stat-value" id="summaryEnJuego">0</span>
+          <span class="summary-stat-label">En juego 2027</span>
+        </div>
+      </div>
+      <h4 class="summary-subtitle">Desglose por provincia (bancas en juego)</h4>
+      <ul class="summary-prov-list" id="summaryProvList"></ul>
+    </aside>
   </div>
 
 </main>
